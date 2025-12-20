@@ -3,7 +3,11 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { AppContextProvider } from "@/context/AppContext";
 
-const inter = Inter({ subsets: ["latin-ext"] });
+const inter = Inter({
+  subsets: ["latin-ext"],
+  variable: "--font-inter",
+  display: "swap",
+});
 
 const firstName = process.env.NEXT_PUBLIC_FIRSTNAME;
 const surName = process.env.NEXT_PUBLIC_SURNAME;
@@ -19,7 +23,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="pl" suppressHydrationWarning>
+    <html lang="pl" className={`${inter.variable}`} suppressHydrationWarning>
       <body className={`${inter.className} dark`}>
         <AppContextProvider>
           {children}

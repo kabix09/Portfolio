@@ -1,20 +1,35 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: var(--bg-primary-color);
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+
+  --color-primary: var(--color-primary);
+  --color-primary-lighter: var(--color-primary-lighter);
   --color-accent: var(--font-secondary);
-  --color-description: var(--color-description-var);
+  --color-description: var(--color-description);
+  --color-font-third: var(--font-third);
 }
 
 :root {
-  --bg-primary-color: hsl(0, 0%, 100%);
-  --font-secondary: #1dc275;
-  --color-description-var: #0b9052;
+  --h: 0;
+  --s: 0%;
+  --l: 100%; 
+  
+  --color-primary: hsl(var(--h), var(--s), var(--l));
+  --color-primary-lighter: hsl(var(--h), var(--s), calc(var(--l) - 10%));
+  
   --font-primary: #404040;
+  --font-secondary: #1dc275; 
+  --color-description: #0b9052;
+  --font-third: #727272;
+  
+  --top-padding: 50px;
 }
 
 .dark {
-  --bg-primary-color: hsl(0, 0%, 12%);
+  --l: 12%; 
+  --color-primary: hsl(var(--h), var(--s), var(--l));
+  --color-primary-lighter: hsl(var(--h), var(--s), calc(var(--l) + 7%));
   --font-primary: #eaeaea;
 }
 
@@ -27,8 +42,10 @@
 .pink   { --font-secondary: #ff99cc; --color-description: #ab0d63; }
 
 @layer base {
-  body {
-    @apply bg-primary text-[var(--font-primary)] transition-all duration-300 ease-in-out;
-    font-family: 'Inter', sans-serif;
+body {
+    @apply bg-primary text-[var(--font-primary)] transition-all duration-300;
+    font-family: var(--font-sans);
+    margin: 0;
+    min-height: 100vh;
   }
 }
