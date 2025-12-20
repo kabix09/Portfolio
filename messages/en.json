@@ -1,0 +1,40 @@
+{
+  "nav": {
+    "sections": {
+      "home": "Hello",
+      "about": "About Me",
+      "education": "Education",
+      "work": "Work",
+      "contact": "Contact"
+    }
+  },
+  "sections": {
+    "home": {
+      "header": {
+        "p1": "Hello there, my name is",
+        "p2": "I am a backend developer with over 3 years of commercial experience.",
+        "p3": "Feel free to explore my ",
+        "p4": " for a comprehensive understanding of my "
+      },
+      "links": {
+        "projects": "projects",
+        "skills": "skills"
+      }
+    },
+    "about": {
+      "description": {
+        "p1": "🏫 For me, studies are not only time for studying but also for personal development in various organizations and scientific circles operating at my university.",
+        "p2": "🔍 I am motivated to continuously develop and take on new challenges in PHP programming. I have solid experience, but I always strive to expand my horizons by exploring new technologies and solutions to constantly raise the bar of my skills.",
+        "p3": "🌐 My practice includes creating effective web solutions using the latest technologies, as well as the ability to effectively manage databases, which contributed to the success of the projects I had the pleasure of working on."
+      }
+    },
+    "contact": {
+      "location": "Location",
+      "relocation": "Poland",
+      "resume": "download resume",
+      "polish": "polish",
+      "english": "english",
+      "copyrights": "© 2025 Jakub Fiturski. All Rights Reserved"
+    }
+  }
+}

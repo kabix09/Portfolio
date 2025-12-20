@@ -1,0 +1,40 @@
+{
+  "nav": {
+    "sections": {
+      "home": "Witaj",
+      "about": "O mnie",
+      "education": "Edukacja",
+      "work": "Portfolio",
+      "contact": "Kontakt"
+    }
+  },
+  "sections": {
+    "home": {
+      "header": {
+        "p1": "Cześć! Nazywam się",
+        "p2": "Jestem web developerem z ponad 3-letnim doświadczeniem komercyjnym.",
+        "p3": "Zapraszam Cię do dalszego poznania moich ",
+        "p4": ", aby uzyskać kompleksowy obraz moich "
+      },
+      "links": {
+        "projects": "projektów",
+        "skills": "umiejętności"
+      }
+    },
+    "about": {
+      "description": {
+        "p1": "🏫 Dla mnie studia to nie tylko czas nauki, ale także możliwość rozwoju osobistego w różnych organizacjach i kołach naukowych działających na mojej uczelni.",
+        "p2": "🔍 Motywuje mnie ciągły rozwój i podejmowanie nowych wyzwań w programowaniu w PHP. Posiadam solidne doświadczenie, ale zawsze dążę do poszerzania swoich horyzontów, poznając nowe technologie i rozwiązania, aby nieustannie podnosić poziom swoich umiejętności.",
+        "p3": "🌐 Moja praktyka obejmuje tworzenie efektywnych rozwiązań webowych z wykorzystaniem najnowszych technologii, a także umiejętność skutecznego zarządzania bazami danych, co przyczyniło się do sukcesu projektów, przy których miałem przyjemność pracować."
+      }
+    },
+    "contact": {
+      "location": "Lokalizacja",
+      "relocation": "Polska",
+      "resume": "Pobierz CV",
+      "polish": "j. polski",
+      "english": "j. angielski",
+      "copyrights": "© 2025 Jakub Fiturski"
+    }
+  }
+}

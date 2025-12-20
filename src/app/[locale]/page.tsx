@@ -40,14 +40,14 @@ export default function Home() {
         min-[500px]:px-[3rem] min-[500px]:pb-[3rem] 
         md:px-[5rem] md:pb-[5rem] 
         xl:ml-[52rem] xl:mr-[5rem] xl:max-w-[95rem] xl:p-0
-        2xl:ml-[60rem] 2xl:mr-[15rem]
+        2xl:ml-[60rem] 2xl:mr-[8rem]
         transition-all duration-300
       ">
-        <section id="home" className="min-h-screen flex items-center justify-center pt-[10rem]">
+        <section id="home" className="min-h-screen flex items-center justify-center py-[10rem]">          
           <Header />
         </section>
         
-        <section id="about" className="min-h-screen flex items-center justify-center pt-[10rem]">
+        <section id="about" className="min-h-screen flex items-center justify-center py-[10rem]">
           <About />
         </section>
       

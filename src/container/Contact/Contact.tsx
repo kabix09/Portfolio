@@ -3,6 +3,7 @@ import React, { useState, useContext } from "react";
 import { RiFacebookFill, RiGithubFill, RiLinkedinFill } from "react-icons/ri";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useTranslations } from 'next-intl';
 
 const container = {
   visible: {
@@ -36,6 +37,7 @@ interface ContactProps {
 }
 
 export const Contact = ({ type }: ContactProps) => {
+  const t = useTranslations();
   const [showResumeButtons, setShowResumeButtons] = useState(false);
   
   const firstName = process.env.NEXT_PUBLIC_FIRSTNAME
@@ -73,13 +75,14 @@ export const Contact = ({ type }: ContactProps) => {
           href="#contact" 
           className="flex items-center px-[15px] py-[8px] border border-accent rounded-[50px] text-accent no-underline cursor-pointer"
         >
+          {t(`nav.sections.contact`)}
         </motion.a>
       )}
 
       {/* Zdjęcie profilowe */}
       <div className="relative w-full max-w-[350px] aspect-[16/9] self-center overflow-hidden rounded-[25px] bg-description transition-colors duration-200 xl:max-w-[350px] max-h-[180px] min-[1150px]:max-h-[215px]">
         <Image
-          src="/assets/profile.webp"
+          src="/assets/profile.jpeg"
           alt="profile_bg"
           fill
           className="object-cover"
@@ -92,7 +95,8 @@ export const Contact = ({ type }: ContactProps) => {
           {/* Lokalizacja */}
           <motion.div variants={child} className="pl-[25px] min-w-[280px] flex flex-row items-center justify-between text-[1.7rem] leading-[1.5]">
             <p>
-              <span className="text-accent"></span>
+                {t(`sections.contact.location`)}: Poznań,{" "}
+              <span className="text-accent">{t(`sections.contact.relocation`)}</span>
             </p>
           </motion.div>
 
@@ -129,6 +133,7 @@ export const Contact = ({ type }: ContactProps) => {
           >
             {!showResumeButtons ? (
               <div className="flex items-center justify-center w-full h-full">
+                {t(`sections.contact.resume`)}
               </div>
             ) : (
               <div className="flex gap-[10px] w-full">
@@ -136,11 +141,13 @@ export const Contact = ({ type }: ContactProps) => {
                   onClick={() => handleDownload("pl")}
                   className="flex-1 py-[10px] rounded-[20px] text-[14px] bg-accent text-[var(--font-tooltip)] border-2 border-accent hover:bg-transparent hover:text-accent transition-all duration-100"
                 >
+                  {t(`sections.contact.polish`)}
                 </button>
                 <button
                   onClick={() => handleDownload("en")}
                   className="flex-1 py-[10px] rounded-[20px] text-[14px] bg-accent text-[var(--font-tooltip)] border-2 border-accent hover:bg-transparent hover:text-accent transition-all duration-100"
                 >
+                  {t(`sections.contact.english`)}
                 </button>
               </div>
             )}
@@ -149,6 +156,7 @@ export const Contact = ({ type }: ContactProps) => {
       </motion.div>
 
       <footer className="self-center text-[var(--font-third)] text-[1.4rem]">
+        {t(`sections.contact.copyrights`)}
       </footer>
     </motion.div>
   );
