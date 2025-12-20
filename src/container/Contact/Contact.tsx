@@ -3,7 +3,6 @@ import React, { useState, useContext } from "react";
 import { RiFacebookFill, RiGithubFill, RiLinkedinFill } from "react-icons/ri";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { AppContext } from "@/context/AppContext";
 
 const container = {
   visible: {
@@ -45,6 +44,7 @@ export const Contact = ({ type }: ContactProps) => {
   const handleDownload = (language: "pl" | "en") => {
     const cvPath = language === "pl" ? "/assets/cv_pl.pdf" : "/assets/cv_en.pdf";
     console.log(`Downloading CV from: ${cvPath}`);
+    // saveAs(cvPath, `${firstName}_${surName}_${language}.pdf`);
   };
 
   return (

@@ -6,6 +6,8 @@ import { AppBackground } from "@/components/AppBackground";
 import { VerticalNavbar } from "@/components/VerticalNavbar/VerticalNavbar";
 import { Navbar } from "@/components/Navbar/Navbar";
 
+import { Header } from "@/container/Header/Header";
+import { About } from "@/container/About/About";
 import { Contact } from "@/container/Contact/Contact";
 
 export default function Home() {
@@ -34,13 +36,20 @@ export default function Home() {
 
       <div className="
         flex flex-col 
-        px-5 pb-5 
-        xs:px-8 xs:pb-8 
-        md:px-12 md:pb-12 
-        xl:max-w-[950px] xl:p-0 xl:ml-[520px] xl:mr-[50px]
-        2xl:ml-[600px] 2xl:mr-[150px]
+        px-[2rem] pb-[2rem] 
+        min-[500px]:px-[3rem] min-[500px]:pb-[3rem] 
+        md:px-[5rem] md:pb-[5rem] 
+        xl:ml-[52rem] xl:mr-[5rem] xl:max-w-[95rem] xl:p-0
+        2xl:ml-[60rem] 2xl:mr-[15rem]
         transition-all duration-300
       ">
+        <section id="home" className="min-h-screen flex items-center justify-center pt-[10rem]">
+          <Header />
+        </section>
+        
+        <section id="about" className="min-h-screen flex items-center justify-center pt-[10rem]">
+          <About />
+        </section>
       
       </div>
     </main>
