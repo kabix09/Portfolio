@@ -28,6 +28,54 @@
         "p3": "🌐 My practice includes creating effective web solutions using the latest technologies, as well as the ability to effectively manage databases, which contributed to the success of the projects I had the pleasure of working on."
       }
     },
+    "education": {
+      "uam": {
+        "school": "Adam Mickiewicz University in Poznań",
+        "degree": "Computer Science",
+        "years": "2019 - 2023",
+        "description": "Bachelor's degree in computer science, covering programming, algorithms, databases, web and mobile application development, recommender systems, and data warehouse design.",
+        "tools": {
+          "Python": "Python",
+          "R": "R",
+          "SQL": "SQL",
+          "PowerBI": "Power BI",
+          "OLAP": "OLAP",
+          "RecommenderSystems": "Recommender Systems",
+          "AlgorithmsAndDataStructures": "Algorithms and Data Structures",
+          "Statistics": "Statistics"
+        }
+      },
+      "pp": {
+        "school": "Poznań University of Technology",
+        "degree": "Computer Science",
+        "years": "2023 - 2024",
+        "description": "Master's degree program focused on data exploration, data warehouses, ETL processes, and data visualization.",
+        "tools": {
+          "Python": "Python",
+          "R": "R",
+          "DataExploration": "Data Exploration",
+          "DataWarehouses": "Data Warehouses",
+          "ETL": "ETL",
+          "DataVisualization": "Data Visualization"
+        }
+      },
+      "uep": {
+        "school": "University of Economics in Poznań",
+        "degree": "Economic Data Analytics",
+        "years": "2024 - 2026",
+        "description": "Master's degree program focused on quantitative and qualitative data analysis through various case studies from socio-economic life.",
+        "tools": {
+          "Python": "Python",
+          "R": "R",
+          "SQL": "SQL",
+          "PowerBI": "Power BI",
+          "Statistics": "Statistics",
+          "DataVisualization": "Data Visualization",
+          "CaseStudies": "Case Studies",
+          "RegressionAnalysis": "Regression Analysis"
+        }
+      }
+    },
     "contact": {
       "location": "Location",
       "relocation": "Poland",

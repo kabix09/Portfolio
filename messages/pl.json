@@ -28,6 +28,54 @@
         "p3": "🌐 Moja praktyka obejmuje tworzenie efektywnych rozwiązań webowych z wykorzystaniem najnowszych technologii, a także umiejętność skutecznego zarządzania bazami danych, co przyczyniło się do sukcesu projektów, przy których miałem przyjemność pracować."
       }
     },
+    "education": {
+      "uam": {
+        "school": "Uniwersytet Adama Mickiewicza w Poznaniu",
+        "degree": "Informatyka",
+        "years": "2019 - 2023",
+        "description": "Studia inżynierskie z zakresu informatyki, obejmujące programowanie, algorytmy, bazy danych, tworzenie aplikacji webowych i mobilnych, systemy rekomendacyjne oraz projektowanie hurtowni danych.",
+        "tools": {
+          "Python": "Python",
+          "R": "R",
+          "SQL": "SQL",
+          "PowerBI": "Power BI",
+          "OLAP": "OLAP",
+          "RecommenderSystems": "Systemy rekomendacyjne",
+          "AlgorithmsAndDataStructures": "Algorytmy i struktury danych",
+          "Statistics": "Statystyka"
+        }
+      },
+      "pp": {
+        "school": "Politechnika Poznańska",
+        "degree": "Technologie Przetwarzania Danych",
+        "years": "2023 - 2024",
+        "description": "Studia magisterskie skoncentrowane na eksploracji danych, hurtowniach danych, procesach ETL oraz wizualizacji danych.",
+        "tools": {
+          "Python": "Python",
+          "R": "R",
+          "DataExploration": "Eksploracja Danych",
+          "DataWarehouses": "Hurtownie Danych",
+          "ETL": "ETL",
+          "DataVisualization": "Wizualizacja Danych"
+        }
+      },
+      "uep": {
+        "school": "Uniwersytet Ekonomiczny w Poznaniu",
+        "degree": "Analityka Danych Ekonomicznych",
+        "years": "2024 - 2026",
+        "description": "Studia magisterskie skupiające się na analizie danych ilościowych oraz jakościowych poprzez różne studia przypadków z życia społeczno-ekonomicznego.",
+        "tools": {
+          "Python": "Python",
+          "R": "R",
+          "SQL": "SQL",
+          "PowerBI": "Power BI",
+          "Statistics": "Statystyka",
+          "DataVisualization": "Wizualizacja Danych",
+          "CaseStudies": "Studia Przypadków",
+          "RegressionAnalysis": "Analiza Regresji"
+        }
+      }
+    },
     "contact": {
       "location": "Lokalizacja",
       "relocation": "Polska",

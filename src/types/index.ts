@@ -19,3 +19,11 @@ export interface AppContextType {
   showAsideContact: boolean;
   showDesktopMenu: boolean;
 }
+
+export interface TimelineItem {
+  school: string;
+  degree: string;
+  years: string;
+  description: string;
+  tools: string[];
+}

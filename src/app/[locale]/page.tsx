@@ -9,6 +9,7 @@ import { Navbar } from "@/components/Navbar/Navbar";
 import { Header } from "@/container/Header/Header";
 import { About } from "@/container/About/About";
 import { Contact } from "@/container/Contact/Contact";
+import { Education } from "@/container/Education/Education";
 
 export default function Home() {
   const context = useContext(AppContext);
@@ -43,14 +44,18 @@ export default function Home() {
         2xl:ml-[60rem] 2xl:mr-[8rem]
         transition-all duration-300
       ">
-        <section id="home" className="min-h-screen flex items-center justify-center py-[10rem]">          
+        <section id="home" className="min-h-screen flex items-center justify-center py-[5rem]">          
           <Header />
         </section>
         
-        <section id="about" className="min-h-screen flex items-center justify-center py-[10rem]">
+        <section id="about" className="min-h-screen flex items-center justify-center py-[5rem]">
           <About />
         </section>
       
+        <section id="education" className="min-h-screen flex flex-col items-center justify-center py-[5rem]">
+          <Education />
+        </section>
+  
       </div>
     </main>
   );

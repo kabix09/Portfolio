@@ -1,0 +1,48 @@
+export const educationData = [
+  {
+    school: "uam.school",
+    degree: "uam.degree",
+    years: "uam.years",
+    description: "uam.description",
+    tools: [
+      "uam.tools.Python",
+      "uam.tools.R",
+      "uam.tools.SQL",
+      "uam.tools.PowerBI",
+      "uam.tools.OLAP",
+      "uam.tools.RecommenderSystems",
+      "uam.tools.AlgorithmsAndDataStructures",
+      "uam.tools.Statistics",
+    ],
+  },
+  {
+    school: "pp.school",
+    degree: "pp.degree",
+    years: "pp.years",
+    description: "pp.description",
+    tools: [
+      "pp.tools.Python",
+      "pp.tools.R",
+      "pp.tools.DataExploration",
+      "pp.tools.DataWarehouses",
+      "pp.tools.ETL",
+      "pp.tools.DataVisualization",
+    ],
+  },
+  {
+    school: "uep.school",
+    degree: "uep.degree",
+    years: "uep.years",
+    description: "uep.description",
+    tools: [
+      "uep.tools.Python",
+      "uep.tools.R",
+      "uep.tools.SQL",
+      "uep.tools.PowerBI",
+      "uep.tools.Statistics",
+      "uep.tools.RegressionAnalysis",
+      "uep.tools.DataVisualization",
+      "uep.tools.CaseStudies",
+    ],
+  },
+];
