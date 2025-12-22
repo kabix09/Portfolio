@@ -29,6 +29,9 @@
       }
     },
     "education": {
+      "headers": {
+        "education": "Education"
+      },
       "uam": {
         "school": "Adam Mickiewicz University in Poznań",
         "degree": "Computer Science",
@@ -74,6 +77,55 @@
           "CaseStudies": "Case Studies",
           "RegressionAnalysis": "Regression Analysis"
         }
+      }
+    },
+    "experience": {
+      "headers": {
+        "experience": "Where I’ve Worked",
+        "usedTech": "Few technologies I’ve been working with:"
+      },
+      "x-one": {
+        "position": "Mid Backend Developer",
+        "from": "Juny 2025",
+        "to": "Now",
+        "duties": {
+          "duty1": "Development of an admin panel for managing the AI assistant's knowledge base."
+        }
+      },
+      "contelizer": {
+        "position": "Backend PHP Developer",
+        "from": "September 2023",
+        "to": "April 2025",
+        "duties": {
+          "duty1": "Development of an e-commerce integration platform for managing product listings, sales, and offer synchronization for sellers using Allegro and Baselinker.",
+          "duty2": "Implementation of new features within a distributed monolith architecture and development of existing system modules according to business requirements.",
+          "duty3": "Integration with external APIs (Allegro, Baselinker) and handling communication between systems.",
+          "duty4": "Refactoring legacy code to improve performance, readability, and maintainability.",
+          "duty5": "Functionality testing, fixing reported bugs, and ensuring application stability.",
+          "duty6": "Creating and maintaining CI/CD processes in GitLab and automating processes using Bash scripts."
+        },
+        "techStack": [
+          "Symfony",
+          "API Platform",
+          "PHPUnit",
+          "Docker",
+          "Redis",
+          "MySQL",
+          "Bash",
+          "GitLab CI/CD"
+        ]
+      },
+      "cogitech": {
+        "position": "Junior Backend Developer",
+        "from": "May 2022",
+        "to": "February 2023",
+        "duties": {
+          "duty1": "Design and development of CRM system modules based on client requirements, including HRM modules for employee settlements, invoice generation, and payment reminders.",
+          "duty2": "Database management and optimization using MySQL, ensuring data integrity and performance.",
+          "duty3": "Functionality testing, bug fixing, and generating PDF reports from system data.",
+          "duty4": "Participation in the Employee Reporting System project using Vue 3 + TypeScript, including creating new views and performing data analysis using SQL."
+        },
+        "techStack": ["Symfony", "API Platform", "Vue.js", "TypeScript", "MySQL"]
       }
     },
     "contact": {

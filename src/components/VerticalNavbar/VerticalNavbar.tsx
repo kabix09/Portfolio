@@ -10,8 +10,8 @@ const links: NavLink[] = [
   { id: 0, label: "home", icon: AiOutlineHome },
   { id: 1, label: "about", icon: RxPerson },
   { id: 2, label: "education", icon: IoSchoolOutline },
-  { id: 4, label: "work", icon: IoBriefcaseOutline },
-  { id: 5, label: "contact", icon: AiOutlineMessage },
+  { id: 3, label: "experience", icon: IoBriefcaseOutline },
+  { id: 4, label: "contact", icon: AiOutlineMessage },
 ];
 
 export const VerticalNavbar = () => {

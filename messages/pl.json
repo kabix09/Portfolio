@@ -29,6 +29,9 @@
       }
     },
     "education": {
+      "headers": {
+        "education": "Wykształcenie"
+      },
       "uam": {
         "school": "Uniwersytet Adama Mickiewicza w Poznaniu",
         "degree": "Informatyka",
@@ -74,6 +77,55 @@
           "CaseStudies": "Studia Przypadków",
           "RegressionAnalysis": "Analiza Regresji"
         }
+      }
+    },
+    "experience": {
+      "headers": {
+        "experience": "Wcześniejsze stanowiska",
+        "usedTech": "Technologie, z których korzystałem:"
+      },
+      "x-one": {
+        "position": "Mid Backend Developer",
+        "from": "Czerwiec 2025",
+        "to": "Now",
+        "duties": {
+          "duty1": "Rozwuj panelu administracyjnego do zarządzania bazą wiedzy asystenta AI"
+        }
+      },
+      "contelizer": {
+        "position": "Backend PHP Developer",
+        "from": "Wrzesień 2023",
+        "to": "Kwiecień 2025",
+        "duties": {
+          "duty1": "Rozwój platformy integracyjnej e-commerce służącej do zarządzania ofertami, sprzedażą oraz synchronizacją produktów dla sprzedawców korzystających z Allegro i Baselinker.",
+          "duty2": "Implementacja nowych funkcjonalności w architekturze distributed monolith oraz rozwój istniejących modułów systemu zgodnie z wymaganiami biznesowymi.",
+          "duty3": "Integracja z zewnętrznymi API (Allegro, Baselinker) oraz obsługa komunikacji między systemami.",
+          "duty4": "Refaktoryzacja starszego kodu w celu poprawy wydajności, czytelności i łatwości utrzymania.",
+          "duty5": "Testowanie funkcjonalności, naprawa zgłoszonych błędów oraz zapewnianie stabilności aplikacji.",
+          "duty6": "Tworzenie i utrzymanie procesów CI/CD w GitLab oraz automatyzacja procesów za pomocą skryptów Bash."
+        },
+        "techStack": [
+          "Symfony",
+          "API Platform",
+          "PHPUnit",
+          "Docker",
+          "Redis",
+          "MySQL",
+          "Bash",
+          "GitLab CI/CD"
+        ]
+      },
+      "cogitech": {
+        "position": "Junior Backend Developer",
+        "from": "May 2022",
+        "to": "February 2023",
+        "duties": {
+          "duty1": "Projektowanie i rozwój modułów systemu CRM zgodnie z wymaganiami klienta, w tym modułów HRM obejmujących rozliczenia pracowników, wysyłkę faktur i przypomnień płatności.",
+          "duty2": "Zarządzanie bazą danych MySQL, optymalizacja zapytań oraz utrzymanie integralności danych.",
+          "duty3": "Testowanie funkcjonalności systemu, naprawa błędów oraz generowanie plików PDF z danymi systemowymi.",
+          "duty4": "Udział w projekcie Employee Reporting System z wykorzystaniem Vue 3 + TypeScript, obejmując tworzenie nowych widoków oraz analizę danych przy użyciu SQL."
+        },
+        "techStack": ["Symfony", "API Platform", "Vue.js", "TypeScript", "MySQL"]
       }
     },
     "contact": {

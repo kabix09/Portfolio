@@ -5,6 +5,7 @@ import { AppContext } from "@/context/AppContext";
 import { AppBackground } from "@/components/AppBackground";
 import { VerticalNavbar } from "@/components/VerticalNavbar/VerticalNavbar";
 import { Navbar } from "@/components/Navbar/Navbar";
+import { Experience } from "@/components/Experience/Experience";
 
 import { Header } from "@/container/Header/Header";
 import { About } from "@/container/About/About";
@@ -52,10 +53,13 @@ export default function Home() {
           <About />
         </section>
       
-        <section id="education" className="min-h-screen flex flex-col items-center justify-center py-[5rem]">
+        <section id="education" className="min-h-screen flex flex-col items-center justify-center py-[2rem]">
           <Education />
         </section>
-  
+
+        <section id="experience" className="min-h-screen flex items-center justify-center py-[2rem]">
+          <Experience />
+        </section>
       </div>
     </main>
   );
