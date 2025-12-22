@@ -151,7 +151,17 @@
           "pest": "PestPHP",
           "api": "REST API"
         }
-      }
+      },
+      "skn": {
+        "title": "SKN Management Platform",
+        "description": "A comprehensive management system for student organizations. It streamlines event logistics, social media content scheduling, membership tracking, and automated event registration processes.",
+        "tech": {
+          "csharp": "C# / .NET",
+          "vue": "Vue.js",
+          "tailwind": "Tailwind CSS",
+          "api": "REST API"
+        }
+    }
     },
     "contact": {
       "location": "Location",

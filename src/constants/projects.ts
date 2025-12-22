@@ -24,6 +24,18 @@ export const projectsData = [
       "wosp.tech.api"
     ],
     // ... linki
+  },
+    {
+    id: "skn",
+    title: "skn.title",
+    category: "Web App",
+    description: "skn.description",
+    images: ["/assets/projects/skn/1.jpg", "/assets/projects/skn/2.jpg"],
+    technologies: [
+      "skn.tech.csharp", 
+      "skn.tech.vue", 
+      "skn.tech.tailwind"
+    ],
   }
 ];
 // projectLink: "", // Opcjonalny link do live

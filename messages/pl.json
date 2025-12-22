@@ -151,6 +151,16 @@
           "pest": "PestPHP",
           "api": "REST API"
         }
+      },
+      "skn": {
+        "title": "System Zarządzania SKN",
+        "description": "Zintegrowana platforma operacyjna do kompleksowej obsługi koła naukowego. System zarządza logistyką wydarzeń, harmonogramem publikacji w mediach społecznościowych, ewidencją członków oraz procesem zapisów.",
+        "tech": {
+          "csharp": "C# / .NET",
+          "vue": "Vue.js",
+          "tailwind": "Tailwind CSS",
+          "api": "REST API"
+        }
       }
     },
     "contact": {
