@@ -4,14 +4,14 @@ import { AppContext } from "@/context/AppContext";
 import { NavLink } from "@/types";
 import { AiOutlineHome, AiOutlineMessage } from "react-icons/ai";
 import { RxPerson } from "react-icons/rx";
-import { IoBriefcaseOutline, IoSchoolOutline } from "react-icons/io5";
+import { IoBriefcaseOutline, IoSchoolOutline, IoCodeSlashOutline } from "react-icons/io5";
 
 const links: NavLink[] = [
   { id: 0, label: "home", icon: AiOutlineHome },
   { id: 1, label: "about", icon: RxPerson },
   { id: 2, label: "education", icon: IoSchoolOutline },
   { id: 3, label: "experience", icon: IoBriefcaseOutline },
-  { id: 4, label: "contact", icon: AiOutlineMessage },
+  { id: 4, label: "projects", icon: IoCodeSlashOutline },
 ];
 
 export const VerticalNavbar = () => {

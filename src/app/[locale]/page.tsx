@@ -11,6 +11,7 @@ import { Header } from "@/container/Header/Header";
 import { About } from "@/container/About/About";
 import { Contact } from "@/container/Contact/Contact";
 import { Education } from "@/container/Education/Education";
+import { Projects } from "@/container/Projects/Projects";
 
 export default function Home() {
   const context = useContext(AppContext);
@@ -59,6 +60,10 @@ export default function Home() {
 
         <section id="experience" className="min-h-screen flex items-center justify-center py-[2rem]">
           <Experience />
+        </section>
+
+        <section id="projects" className="min-h-screen flex items-center justify-center py-[2rem]">
+          <Projects />
         </section>
       </div>
     </main>

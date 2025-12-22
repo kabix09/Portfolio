@@ -128,6 +128,31 @@
         "techStack": ["Symfony", "API Platform", "Vue.js", "TypeScript", "MySQL"]
       }
     },
+    "projects": {
+      "headers": {
+        "projects": "Projekty w których uczestniczyłem"
+      },
+      "pyrkon": {
+        "title": "System Rejestracji RPG – Pyrkon",
+        "description": "Kompleksowy system zapisów na sesje RPG dla największego konwentu fantastyki w Polsce. Umożliwia zarządzanie tysiącami uczestników, sesjami Mistrzów Gry oraz logistyką wydarzenia.",
+        "tech": {
+          "laravel": "Laravel",
+          "php": "PHP",
+          "postgres": "PostgreSQL",
+          "docker": "Docker"
+        }
+      },
+      "wosp": {
+        "title": "System Rozliczania Puszek – WOŚP",
+        "description": "System wspierający sztab WOŚP przy Politechnice Poznańskiej w procesie wydawania i rozliczania puszek wolontariuszy. Skupiony na automatyzacji i bezpieczeństwie danych finansowych.",
+        "tech": {
+          "laravel": "Laravel",
+          "php": "PHP",
+          "pest": "PestPHP",
+          "api": "REST API"
+        }
+      }
+    },
     "contact": {
       "location": "Lokalizacja",
       "relocation": "Polska",

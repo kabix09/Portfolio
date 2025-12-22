@@ -128,6 +128,31 @@
         "techStack": ["Symfony", "API Platform", "Vue.js", "TypeScript", "MySQL"]
       }
     },
+    "projects": {
+      "headers": {
+        "projects": "Projects I've Participated In"
+      },
+      "pyrkon": {
+        "title": "RPG Registration System – Pyrkon",
+        "description": "A robust registration system for RPG sessions at Poland's largest fantasy convention. Manages player sign-ups, Game Master sessions, and event logistics for thousands of attendees.",
+        "tech": {
+          "laravel": "Laravel",
+          "php": "PHP",
+          "postgres": "PostgreSQL",
+          "docker": "Docker"
+        }
+      },
+      "wosp": {
+        "title": "Donation Settlement System – WOŚP",
+        "description": "A management system for the WOŚP staff at Poznan University of Technology. Streamlines the issuing and settling of donation cans for volunteers during the charity finale.",
+        "tech": {
+          "laravel": "Laravel",
+          "php": "PHP",
+          "pest": "PestPHP",
+          "api": "REST API"
+        }
+      }
+    },
     "contact": {
       "location": "Location",
       "relocation": "Poland",
