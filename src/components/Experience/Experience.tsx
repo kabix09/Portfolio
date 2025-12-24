@@ -1,17 +1,17 @@
 "use client";
 import React, { useState, useContext, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, Variants } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { VscDebugBreakpointFunction } from "react-icons/vsc";
 import { experienceData } from "@/constants/experience";
 import { AppContext } from "@/context/AppContext";
 
-const textMotion = {
+const textMotion: Variants = {
   rest: { x: 0, transition: { duration: 0.2, ease: "easeInOut" } },
   hover: { x: 10, transition: { duration: 0.2, ease: "easeInOut" } },
 };
 
-const containerVariants = {
+const containerVariants: Variants = {
   hidden: { opacity: 0, x: -10 },
   visible: { 
     opacity: 1, 
@@ -20,7 +20,7 @@ const containerVariants = {
   },
 };
 
-const childVariants = {
+const childVariants: Variants = {
   hidden: { opacity: 0, x: 10 },
   visible: { opacity: 1, x: 0 },
 };
