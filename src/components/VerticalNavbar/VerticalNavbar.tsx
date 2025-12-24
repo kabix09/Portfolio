@@ -54,12 +54,12 @@ export const VerticalNavbar = () => {
               </button>
               
               {/* Tooltip */}
-              <div className={`
+              {/* <div className={`
                 absolute left-full ml-4 px-2 py-2 bg-accent text-white text-xs rounded 
                 opacity-0 pointer-events-none transition-opacity group-hover:opacity-100 uppercase
               `}>
                 {link.label}
-              </div>
+              </div> */}
             </li>
           );
         })}

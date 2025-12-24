@@ -30,6 +30,9 @@
       }
     },
     "about": {
+      "headers": {
+        "about": "O mnie"
+      },
       "description": {
         "p1": "🏫 Dla mnie studia to nie tylko czas nauki, ale także możliwość rozwoju osobistego w różnych organizacjach i kołach naukowych działających na mojej uczelni.",
         "p2": "🔍 Motywuje mnie ciągły rozwój i podejmowanie nowych wyzwań w programowaniu w PHP. Posiadam solidne doświadczenie, ale zawsze dążę do poszerzania swoich horyzontów, poznając nowe technologie i rozwiązania, aby nieustannie podnosić poziom swoich umiejętności.",
