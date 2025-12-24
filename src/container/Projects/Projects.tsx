@@ -1,15 +1,27 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import { useTranslations } from "next-intl";
 import { motion, AnimatePresence } from "framer-motion";
 import { ProjectCard } from "@/components/ProjectCard/ProjectCard";
-import { projectsData, projectCategories } from "@/constants/projects";
+import { projectsData, getProjectCategories } from "@/constants/projects";
+import { AppContext } from "@/context/AppContext";
 
 export const Projects = () => {
   const t = useTranslations("sections.projects");
+  const context = useContext(AppContext);
+  
+  const activeProfile = context?.activeProfile || "backend";
   const [activeCategory, setActiveCategory] = useState("All");
 
-  const filteredProjects = projectsData.filter((project) => 
+  const categories = getProjectCategories(activeProfile);
+
+  useEffect(() => {
+    setActiveCategory("All");
+  }, [activeProfile]);
+
+  const currentProfileProjects = projectsData[activeProfile as keyof typeof projectsData] || [];
+
+  const filteredProjects = currentProfileProjects.filter((project) =>
     activeCategory === "All" ? true : project.category === activeCategory
   );
 
@@ -23,7 +35,7 @@ export const Projects = () => {
       </div>
 
       <div className="flex flex-wrap justify-center gap-[1.5rem] mb-[3rem]">
-        {projectCategories.map((category) => (
+        {categories.map((category) => (
           <button
             key={category}
             onClick={() => setActiveCategory(category)}
@@ -41,12 +53,12 @@ export const Projects = () => {
 
       <motion.div 
         layout
-        className="w-full flex flex-col gap-[4rem]"
+        className="w-full grid grid-cols-1 lg:grid-cols-2 gap-[2rem]" // Zmiana z flex-col na grid
       >
         <AnimatePresence mode="popLayout">
           {filteredProjects.map((project, index) => (
             <ProjectCard 
-              key={project.id}
+              key={`${activeProfile}-${project.id}`}
               {...project}
               index={index}
             />
@@ -54,9 +66,9 @@ export const Projects = () => {
         </AnimatePresence>
         
         {filteredProjects.length === 0 && (
-            <p className="text-font-third text-[2rem] text-center py-[5rem]">
-                No projects found in this category.
-            </p>
+          <motion.p className="col-span-full text-font-third text-[2rem] text-center py-[5rem]">
+            No projects found in this category.
+          </motion.p>
         )}
       </motion.div>
     </div>

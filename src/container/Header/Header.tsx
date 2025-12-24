@@ -1,8 +1,9 @@
 "use client";
-import React from "react";
-import { motion } from "framer-motion";
+import React, { useContext } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import { Pointer } from "lucide-react";
 import { useTranslations } from 'next-intl';
+import { AppContext } from "@/context/AppContext";
 
 const containerVariants = {
   visible: {
@@ -23,21 +24,24 @@ const childVariants = {
 
 export const Header = () => {
   const t = useTranslations();
+  const context = useContext(AppContext);
+  const activeProfile = context?.activeProfile || "backend";
   
   const firstName = process.env.NEXT_PUBLIC_FIRSTNAME;
   const surName = process.env.NEXT_PUBLIC_SURNAME;
 
+  const baseKey = `sections.home.${activeProfile}`;
+
   return (
     <motion.div
+      key={activeProfile}
       variants={containerVariants}
       initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true }}
-      /* Usunięto id, centrowanie i sztywne pb. Komponent zajmuje 100% szerokości kontenera */
+      animate="visible"
       className="w-full flex flex-col items-start"
     >
       <motion.p variants={childVariants} className="text-accent mb-[2rem] text-[2rem] font-medium">
-        {t("sections.home.header.p1")}
+        {t(`${baseKey}.header.p1`)}
       </motion.p>
 
       <motion.h1 
@@ -48,27 +52,19 @@ export const Header = () => {
       </motion.h1>
 
       <motion.h2 
+        key={`title-${activeProfile}`}
         variants={childVariants} 
         className="font-normal leading-[1.2] text-[2.6rem] min-[500px]:text-[3rem] md:text-[4.8rem] mb-[3rem]"
       >
-        Backend Developer
+        {t(`${baseKey}.role`)}
       </motion.h2>
 
       <motion.div 
+        key={`desc-${activeProfile}`}
         variants={childVariants}
         className="text-[1.5rem] min-[500px]:text-[1.6rem] text-font-third flex flex-col gap-[1.5rem] tracking-[0.5px] max-w-[70rem] leading-[1.6]"
       >
-        <p>{t("sections.home.header.p2")}</p>
-        <p className="flex flex-wrap items-center gap-x-2">
-          {t("sections.home.header.p3")}
-          <a className="text-accent no-underline cursor-pointer inline-flex items-center gap-2 hover:brightness-110 transition-all" href="#work">
-            <Pointer size={16} className="rotate-90" /> {t("sections.home.links.projects")}
-          </a>
-          {t("sections.home.header.p4")}
-          <a className="text-accent no-underline cursor-pointer inline-flex items-center gap-2 hover:brightness-110 transition-all" href="#skills">
-            <Pointer size={16} className="rotate-90" /> {t("sections.home.links.skills")}
-          </a>.
-        </p>
+        <p>{t(`${baseKey}.header.p2`)}</p>
       </motion.div>
     </motion.div>
   );

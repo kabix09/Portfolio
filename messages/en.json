@@ -10,11 +10,19 @@
   },
   "sections": {
     "home": {
-      "header": {
-        "p1": "Hello there, my name is",
-        "p2": "I am a backend developer with over 3 years of commercial experience.",
-        "p3": "Feel free to explore my ",
-        "p4": " for a comprehensive understanding of my "
+      "backend": {
+        "role": "Backend Developer",
+        "header": {
+          "p1": "Hello there, my name is",
+          "p2": "I am a backend developer with over 3 years of commercial experience. I specialize in building scalable systems and optimizing databases."
+        }
+      },
+      "data_analyst": {
+        "role": "Junior Data Analyst",
+        "header": {
+          "p1": "Hello there, my name is",
+          "p2": "Passionate about extracting actionable insights from data and supporting data-driven decisions while developing skills in data analysis."
+        }
       },
       "links": {
         "projects": "projects",
@@ -84,6 +92,7 @@
         "experience": "Where I’ve Worked",
         "usedTech": "Few technologies I’ve been working with:"
       },
+      "noExperienceYet": "I don't have professional experience in this role yet.",
       "x-one": {
         "position": "Mid Backend Developer",
         "from": "Juny 2025",
@@ -161,7 +170,49 @@
           "tailwind": "Tailwind CSS",
           "api": "REST API"
         }
-    }
+      },
+      "hotel_recommender_classic": {
+        "title": "Hotel Recommender System (Classic)",
+        "description": "A recommendation system based on classical machine learning algorithms and collaborative filtering. It analyzes historical user data to match hotel offers with individual preferences. The project focuses on efficient data processing and recommendation engine precision.",
+        "tech": {
+          "python": "Python",
+          "pandas": "Pandas",
+          "scikit": "Scikit-learn",
+          "numpy": "NumPy"
+        }
+      },
+      "hotel_recommender_nn": {
+        "title": "Hotel Recommender System (Neural Networks)",
+        "description": "An advanced recommendation model utilizing deep neural networks for behavior pattern analysis. The project implements a Deep Learning architecture to capture non-linear relationships in user preferences. This solution provides high-level real-time personalization.",
+        "tech": {
+          "python": "Python",
+          "tensorflow": "TensorFlow/Keras",
+          "pandas": "Pandas",
+          "numpy": "NumPy"
+        }
+      },
+      "story_beats": {
+        "title": "Story Beats (NLP Analysis)",
+        "description": "A text analysis system using NLP to classify and examine narrative structures. The project implements a full data pipeline: from web scraping (BeautifulSoup) and text cleaning to advanced TF-IDF feature extraction. Story rhythm classification is performed using Scikit-learn models such as Random Forest and SVM.",
+        "tech": {
+          "python": "Python",
+          "sklearn": "Scikit-learn",
+          "nltk": "NLTK",
+          "pandas": "Pandas",
+          "bs4": "BeautifulSoup"
+        }
+      },
+      "lego_analysis": {
+        "title": "LEGO Data Analysis & Prediction",
+        "description": "Advanced analytical report built with R, examining the evolution of LEGO sets over 80 years. The project features data wrangling (Tidyr, Dplyr), interactive visualizations (Plotly, GGanimate), and regression models (Lasso, Ridge) to predict part production periods.",
+        "tech": {
+          "r": "R Language",
+          "ggplot2": "GGplot2",
+          "dplyr": "Dplyr",
+          "caret": "Caret (ML)",
+          "plotly": "Plotly"
+        }
+      }
     },
     "contact": {
       "location": "Location",

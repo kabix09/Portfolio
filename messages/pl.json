@@ -10,14 +10,22 @@
   },
   "sections": {
     "home": {
-      "header": {
-        "p1": "Cześć! Nazywam się",
-        "p2": "Jestem web developerem z ponad 3-letnim doświadczeniem komercyjnym.",
-        "p3": "Zapraszam Cię do dalszego poznania moich ",
-        "p4": ", aby uzyskać kompleksowy obraz moich "
+      "backend": {
+        "role": "Backend Developer",
+        "header": {
+          "p1": "Cześć, nazywam się",
+          "p2": "Jestem web developerem z ponad 3-letnim doświadczeniem komercyjnym. Specjalizuję się w budowaniu skalowalnych systemów oraz optymalizacji baz danych."
+        }
+      },
+      "data_analyst": {
+        "role": "Młodszy Analityk Danych",
+        "header": {
+          "p1": "Cześć, nazywam się",
+          "p2": "Pasjonuję się wyciąganiem użytecznych wniosków z danych oraz wspieraniem decyzji opartych na danych, rozwijając się w obszarze analizy danych."
+        }
       },
       "links": {
-        "projects": "projektów",
+        "projects": "projekty",
         "skills": "umiejętności"
       }
     },
@@ -84,6 +92,7 @@
         "experience": "Wcześniejsze stanowiska",
         "usedTech": "Technologie, z których korzystałem:"
       },
+      "noExperienceYet": "Jeszcze nie mam doświadczenia zawodowego w tej roli.",
       "x-one": {
         "position": "Mid Backend Developer",
         "from": "Czerwiec 2025",
@@ -161,6 +170,48 @@
           "tailwind": "Tailwind CSS",
           "api": "REST API"
         }
+      },
+      "hotel_recommender_classic": {
+        "title": "System Rekomendacji Hoteli (Classic)",
+        "description": "System rekomendacji oparty na klasycznych algorytmach uczenia maszynowego i filtrowaniu kolaboratywnym. Analizuje dane historyczne użytkowników, aby dopasować oferty hoteli do ich indywidualnych preferencji. Projekt skupia się na efektywnym przetwarzaniu danych i precyzji silnika rekomendacji.",
+        "tech": {
+          "python": "Python",
+          "pandas": "Pandas",
+          "scikit": "Scikit-learn",
+          "numpy": "NumPy"
+        }
+      },
+      "hotel_recommender_nn": {
+        "title": "System Rekomendacji Hoteli (Neural Network)",
+        "description": "Zaawansowany model rekomendacyjny wykorzystujący głębokie sieci neuronowe do analizy wzorców zachowań. Projekt implementuje architekturę Deep Learning, która pozwala na wychwycenie nieliniowych zależności w preferencjach użytkowników. Rozwiązanie zapewnia wysoką personalizację wyników w czasie rzeczywistym.",
+        "tech": {
+          "python": "Python",
+          "tensorflow": "TensorFlow/Keras",
+          "pandas": "Pandas",
+          "numpy": "NumPy"
+        }
+      },
+      "story_beats": {
+        "title": "Story Beats (NLP Analysis)",
+        "description": "System analizy tekstu wykorzystujący NLP do klasyfikacji i badania struktury narracyjnej. Projekt implementuje pełny rurociąg przetwarzania danych: od scrapingu (BeautifulSoup) i czyszczenia tekstu, po zaawansowaną analizę cech TF-IDF. Klasyfikacja rytmu opowieści odbywa się przy użyciu modeli Scikit-learn, takich jak Random Forest i SVM.",
+        "tech": {
+          "python": "Python",
+          "sklearn": "Scikit-learn",
+          "nltk": "NLTK",
+          "pandas": "Pandas",
+          "bs4": "BeautifulSoup"
+        }
+      },
+      "lego_analysis": {
+        "title": "Analiza i Predykcja Danych LEGO",
+        "description": "Zaawansowany raport analityczny wykonany w R, badający ewolucję zestawów LEGO na przestrzeni 80 lat. Projekt obejmuje czyszczenie danych (Tidyr, Dplyr), interaktywne wizualizacje (Plotly, GGanimate) oraz budowę modeli regresji (Lasso, Ridge) przewidujących czas produkcji elementów.",
+        "tech": {
+          "r": "R Language",
+          "ggplot2": "GGplot2",
+          "dplyr": "Dplyr",
+          "caret": "Caret (ML)",
+          "plotly": "Plotly"
+        }
       }
     },
     "contact": {
@@ -169,7 +220,7 @@
       "resume": "Pobierz CV",
       "polish": "j. polski",
       "english": "j. angielski",
-      "copyrights": "© 2025 Jakub Fiturski"
+      "copyrights": "© 2025 Jakub Fiturski. Prawa zastrzeżone."
     }
   }
 }

@@ -4,6 +4,7 @@ import React, { createContext, useState, useEffect, ReactNode } from "react";
 // Definicja dostępnych typów dla autouzupełniania
 export type Theme = "light" | "dark";
 export type ColorAccent = "orange" | "yellow" | "blue" | "red" | "purple" | "green" | "pink";
+export type Profile = "backend" | "data_analyst";
 
 interface AppContextInterface {
   theme: Theme;
@@ -14,6 +15,8 @@ interface AppContextInterface {
   setActiveSection: (section: string) => void;
   showAsideContact: boolean;
   setShowAsideContact: (show: boolean) => void;
+  activeProfile: Profile;
+  setActiveProfile: (profile: Profile) => void;
 }
 
 export const AppContext = createContext<AppContextInterface | undefined>(undefined);
@@ -23,6 +26,7 @@ export const AppContextProvider = ({ children }: { children: ReactNode }) => {
   const [selectedColor, setSelectedColor] = useState<ColorAccent>("green");
   const [activeSection, setActiveSection] = useState<string>("home");
   const [showAsideContact, setShowAsideContact] = useState<boolean>(true);
+  const [activeProfile, setActiveProfile] = useState<Profile>("backend");
 
   useEffect(() => {
     const body = document.body;
@@ -68,6 +72,8 @@ export const AppContextProvider = ({ children }: { children: ReactNode }) => {
         setActiveSection,
         showAsideContact,
         setShowAsideContact,
+        activeProfile,
+        setActiveProfile,
       }}
     >
       {children}

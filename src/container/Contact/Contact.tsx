@@ -1,10 +1,12 @@
 "use client";
-import React from "react";
+import React, { useContext } from "react";
 import { RiFacebookFill, RiGithubFill, RiLinkedinFill } from "react-icons/ri";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useTranslations, useLocale } from 'next-intl';
 import { LanguageSwitcher } from "./LanguageSwitcher";
+import { ProfileToggle } from "./ProfileToggle";
+import { AppContext } from "@/context/AppContext";
 
 const container = {
   visible: {
@@ -39,22 +41,15 @@ interface ContactProps {
 
 export const Contact = ({ type }: ContactProps) => {
   const t = useTranslations();
+  const context = useContext(AppContext);
+  const activeProfile = context?.activeProfile || "backend";
+
   const locale = useLocale();
   
   const firstName = process.env.NEXT_PUBLIC_FIRSTNAME;
   const surName = process.env.NEXT_PUBLIC_SURNAME;
 
-  const handleDownload = () => {
-    const cvPath = locale === "pl" ? "/assets/cv_pl.pdf" : "/assets/cv_en.pdf";
-    
-    // Tworzenie tymczasowego linku do pobrania
-    const link = document.createElement('a');
-    link.href = cvPath;
-    link.download = `${firstName}_${surName}_CV_${locale.toUpperCase()}.pdf`;
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+  const baseKey = `sections.home.${activeProfile}`;
 
   return (
     <motion.div
@@ -76,7 +71,7 @@ export const Contact = ({ type }: ContactProps) => {
             {firstName} {surName}
           </motion.h2>
           <motion.p variants={child} className="text-[1.6rem] text-accent font-medium">
-            Backend Developer
+            {t(`${baseKey}.role`)}
           </motion.p>
         </motion.div>
       ) : (
@@ -128,14 +123,10 @@ export const Contact = ({ type }: ContactProps) => {
         variants={buttonContainer}
         className="flex flex-col items-stretch self-stretch gap-[15px]"
       >
-        <div className="flex flex-row items-center gap-[15px]">
-          <motion.button
-            variants={buttonChild}
-            onClick={handleDownload}
-            className="flex-1 h-[50px] bg-accent text-[var(--font-tooltip)] border-2 border-accent rounded-[50px] text-[1.2rem] uppercase transition-all duration-300 hover:bg-transparent hover:text-accent active:scale-95 shadow-md"
-          >
-            {t(`sections.contact.resume`)}
-          </motion.button>
+        <div className="flex flex-row items-center gap-[15px] w-full">
+          <motion.div className="flex-1">
+            <ProfileToggle />
+          </motion.div>
 
           <motion.div variants={buttonChild} className="flex-shrink-0">
             <LanguageSwitcher />
