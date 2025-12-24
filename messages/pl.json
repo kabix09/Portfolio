@@ -56,7 +56,8 @@
           "OLAP": "OLAP",
           "RecommenderSystems": "Systemy rekomendacyjne",
           "AlgorithmsAndDataStructures": "Algorytmy i struktury danych",
-          "Statistics": "Statystyka"
+          "Statistics": "Statystyka",
+          "MDX": "MDX"
         }
       },
       "pp": {
@@ -86,7 +87,8 @@
           "Statistics": "Statystyka",
           "DataVisualization": "Wizualizacja Danych",
           "CaseStudies": "Studia Przypadków",
-          "RegressionAnalysis": "Analiza Regresji"
+          "RegressionAnalysis": "Analiza Regresji",
+          "DAX": "DAX"
         }
       }
     },
@@ -214,6 +216,18 @@
           "dplyr": "Dplyr",
           "caret": "Caret (ML)",
           "plotly": "Plotly"
+        }
+      },
+      "msbi_frania": {
+        "title": "System Business Intelligence (MSBI)",
+        "description": "Projekt BI realizujący pełny proces przetwarzania danych. Obejmuje budowę hurtowni danych w schemacie gwiazdy (SSIS), stworzenie wielwymiarowych kostek analitycznych OLAP (SSAS) oraz implementację raportów sprzedażowych w SSRS i Power BI. Rozwiązanie demonstruje integrację całego stosu technologicznego Microsoft Business Intelligence.",
+        "tech": {
+          "ssis": "SSIS (ETL)",
+          "ssas": "SSAS (OLAP)",
+          "ssrs": "SSRS (Reports)",
+          "powerbi": "Power BI",
+          "sqlserver": "SQL Server",
+          "mdx": "MDX"
         }
       }
     },

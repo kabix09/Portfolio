@@ -99,6 +99,22 @@ export const projectsData = {
         "lego_analysis.tech.plotly"
       ],
       githubLink: "https://github.com/kabix09/lego-data-analysis"
+    },
+    {
+      id: "msbi_frania",
+      title: "msbi_frania.title",
+      category: "MSBI",
+      description: "msbi_frania.description",
+      images: ["/assets/projects/msbi_frania/1.png", "/assets/projects/msbi_frania/2.png"],
+      technologies: [
+        "msbi_frania.tech.ssis",
+        "msbi_frania.tech.ssas",
+        "msbi_frania.tech.ssrs",
+        "msbi_frania.tech.powerbi",
+        "msbi_frania.tech.mdx",
+        "msbi_frania.tech.sqlserver"
+      ],
+      githubLink: "https://github.com/kabix09/MSBI-PowerBi"
     }
   ],
 };

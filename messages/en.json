@@ -56,7 +56,8 @@
           "OLAP": "OLAP",
           "RecommenderSystems": "Recommender Systems",
           "AlgorithmsAndDataStructures": "Algorithms and Data Structures",
-          "Statistics": "Statistics"
+          "Statistics": "Statistics",
+          "MDX": "MDX"
         }
       },
       "pp": {
@@ -86,7 +87,8 @@
           "Statistics": "Statistics",
           "DataVisualization": "Data Visualization",
           "CaseStudies": "Case Studies",
-          "RegressionAnalysis": "Regression Analysis"
+          "RegressionAnalysis": "Regression Analysis",
+          "DAX": "DAX"
         }
       }
     },
@@ -214,6 +216,18 @@
           "dplyr": "Dplyr",
           "caret": "Caret (ML)",
           "plotly": "Plotly"
+        }
+      },
+      "msbi_frania": {
+        "title": "Business Intelligence System (MSBI)",
+        "description": "BI project implementing a full data processing pipeline. It covers building a star-schema data warehouse (SSIS), creating multidimensional OLAP cubes (SSAS), and implementing sales reports in SSRS and Power BI. The solution demonstrates the complete integration of the Microsoft Business Intelligence stack.",
+        "tech": {
+          "ssis": "SSIS (ETL)",
+          "ssas": "SSAS (OLAP)",
+          "ssrs": "SSRS (Reports)",
+          "powerbi": "Power BI",
+          "sqlserver": "SQL Server",
+          "mdx": "MDX"
         }
       }
     },
