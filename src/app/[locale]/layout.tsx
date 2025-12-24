@@ -18,6 +18,9 @@ const surName = process.env.NEXT_PUBLIC_SURNAME;
 export const metadata: Metadata = {
   title: `${firstName} ${surName} - Portfolio`,
   description: `Backend developer / Data analyst portfolio of ${firstName} ${surName}.`,
+  icons: {
+    icon: "/favicon.ico",
+  }
 };
 
 // Definiujemy typ dla params jako Promise
