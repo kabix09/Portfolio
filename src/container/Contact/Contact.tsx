@@ -104,7 +104,7 @@ export const Contact = ({ type }: ContactProps) => {
           {[
             { icon: RiLinkedinFill, url: process.env.NEXT_PUBLIC_LINKEDIN_URL },
             { icon: RiGithubFill, url: process.env.NEXT_PUBLIC_GITHUB_URL },
-            { icon: RiFacebookFill, url: process.env.NEXT_PUBLIC_FACEBOOK_URL },
+            // { icon: RiFacebookFill, url: process.env.NEXT_PUBLIC_FACEBOOK_URL },
           ].map((social, idx) => (
             <a
               key={idx}
