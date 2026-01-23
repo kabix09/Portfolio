@@ -14,7 +14,7 @@
         "role": "Backend Developer",
         "header": {
           "p1": "Hello there, my name is",
-          "p2": "I am a backend developer with over 3 years of commercial experience. I specialize in building scalable systems and optimizing databases."
+          "p2": "I am a backend developer with over 3 years of commercial experience in building scalable and flexible systems. I specialize in designing modular solutions and integrating external processes and services, ensuring application stability and performance."
         }
       },
       "data_analyst": {
@@ -100,10 +100,14 @@
       "noExperienceYet": "I don't have professional experience in this role yet.",
       "x-one": {
         "position": "Mid Backend Developer",
-        "from": "Juny 2025",
+        "from": "June 2025",
         "to": "Now",
         "duties": {
-          "duty1": "Development of an admin panel for managing the AI assistant's knowledge base."
+          "duty1": "Designing and implementing modules for AI assistant administrative panels.",  
+          "duty2": "Integrating applications with headless services.",
+          "duty3": "Implementing integrations with e-commerce platform APIs (IdoSell, Shoper).",
+          "duty4": "Developing and refactoring data acquisition processes from external systems.",
+          "duty5": "Implementing user interfaces using Twig templating engine."
         }
       },
       "contelizer": {
@@ -113,33 +117,22 @@
         "duties": {
           "duty1": "Development of an e-commerce integration platform for managing product listings, sales, and offer synchronization for sellers using Allegro and Baselinker.",
           "duty2": "Implementation of new features within a distributed monolith architecture and development of existing system modules according to business requirements.",
-          "duty3": "Integration with external APIs (Allegro, Baselinker) and handling communication between systems.",
-          "duty4": "Refactoring legacy code to improve performance, readability, and maintainability.",
+          "duty3": "Integration with external APIs (Allegro, Baselinker).",
+          "duty4": "Refactoring legacy code, improving performance and system stability.",
           "duty5": "Functionality testing, fixing reported bugs, and ensuring application stability.",
-          "duty6": "Creating and maintaining CI/CD processes in GitLab and automating processes using Bash scripts."
-        },
-        "techStack": [
-          "Symfony",
-          "API Platform",
-          "PHPUnit",
-          "Docker",
-          "Redis",
-          "MySQL",
-          "Bash",
-          "GitLab CI/CD"
-        ]
+          "duty6": "Creating and maintaining CI/CD processes in GitLab CI, automating processes using Bash scripts."
+        }
       },
       "cogitech": {
         "position": "Junior Backend Developer",
         "from": "May 2022",
         "to": "February 2023",
         "duties": {
-          "duty1": "Design and development of CRM system modules based on client requirements, including HRM modules for employee settlements, invoice generation, and payment reminders.",
-          "duty2": "Database management and optimization using MySQL, ensuring data integrity and performance.",
-          "duty3": "Functionality testing, bug fixing, and generating PDF reports from system data.",
-          "duty4": "Participation in the Employee Reporting System project using Vue 3 + TypeScript, including creating new views and performing data analysis using SQL."
-        },
-        "techStack": ["Symfony", "API Platform", "Vue.js", "TypeScript", "MySQL"]
+          "duty1": "Design and development of CRM system modules for internal operations and accounting departments, including HRM modules covering employee settlements, invoice delivery, and payment reminders.",
+          "duty2": "Database management and optimization, ensuring data integrity and performance.",
+          "duty3": "Functionality testing, bug fixing, and reports generating.",
+          "duty4": "Participation in the Employee Reporting System project using Vue 3 + TypeScript, including creating new views and writing analytical queries using SQL."
+        }
       }
     },
     "projects": {

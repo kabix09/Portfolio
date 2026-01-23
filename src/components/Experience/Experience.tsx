@@ -132,7 +132,7 @@ export const Experience = () => {
                       {t("headers.usedTech")}
                     </p>
                     <div className="flex gap-[2rem] md:gap-[8rem]">
-                      {[activeJob.techStack.column01, activeJob.techStack.column02].map((column, colIdx) => (
+                      {[activeJob.techStack.column01, activeJob.techStack.column02, activeJob.techStack.column03??[]].map((column, colIdx) => (
                         <ul key={colIdx} className="flex flex-col gap-3">
                           {column.map((tech) => (
                             <li key={tech} className="flex items-center gap-3 text-[1.4rem] text-font-third">

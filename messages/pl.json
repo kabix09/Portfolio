@@ -14,7 +14,7 @@
         "role": "Backend Developer",
         "header": {
           "p1": "Cześć, nazywam się",
-          "p2": "Jestem web developerem z ponad 3-letnim doświadczeniem komercyjnym. Specjalizuję się w budowaniu skalowalnych systemów oraz optymalizacji baz danych."
+          "p2": "Jestem web developerem z ponad 3-letnim doświadczeniem w tworzeniu skalowalnych i elastycznych systemów. Specjalizuję się w projektowaniu modułowych rozwiązań oraz integracji procesów i usług zewnętrznych, zapewniając stabilność i wydajność aplikacji."
         }
       },
       "data_analyst": {
@@ -101,9 +101,13 @@
       "x-one": {
         "position": "Mid Backend Developer",
         "from": "Czerwiec 2025",
-        "to": "Now",
+        "to": "Teraz",
         "duties": {
-          "duty1": "Rozwuj panelu administracyjnego do zarządzania bazą wiedzy asystenta AI"
+          "duty1": "Projektowanie i implementacja modułów do narzędzi typu panelu administracyjnego asystenta AI",
+          "duty2": "Integracja z serwisami headless",
+          "duty3": "Integracja z API platform e-commerce (IdoSell, Shoper)",
+          "duty4": "Rozwój i refaktoryzacja procesu pozyskiwania danych z systemu zewnętrznego.",
+          "duty5": "Implementacja interfejsów w Twig"
         }
       },
       "contelizer": {
@@ -113,33 +117,22 @@
         "duties": {
           "duty1": "Rozwój platformy integracyjnej e-commerce służącej do zarządzania ofertami, sprzedażą oraz synchronizacją produktów dla sprzedawców korzystających z Allegro i Baselinker.",
           "duty2": "Implementacja nowych funkcjonalności w architekturze distributed monolith oraz rozwój istniejących modułów systemu zgodnie z wymaganiami biznesowymi.",
-          "duty3": "Integracja z zewnętrznymi API (Allegro, Baselinker) oraz obsługa komunikacji między systemami.",
-          "duty4": "Refaktoryzacja starszego kodu w celu poprawy wydajności, czytelności i łatwości utrzymania.",
+          "duty3": "Integracja z zewnętrznymi API (Allegro, Baselinker).",
+          "duty4": "Refaktoryzacja kodu, poprawa wydajności i stabilności systemu.",
           "duty5": "Testowanie funkcjonalności, naprawa zgłoszonych błędów oraz zapewnianie stabilności aplikacji.",
-          "duty6": "Tworzenie i utrzymanie procesów CI/CD w GitLab oraz automatyzacja procesów za pomocą skryptów Bash."
-        },
-        "techStack": [
-          "Symfony",
-          "API Platform",
-          "PHPUnit",
-          "Docker",
-          "Redis",
-          "MySQL",
-          "Bash",
-          "GitLab CI/CD"
-        ]
+          "duty6": "Tworzenie i utrzymanie procesów CI/CD w GitLab CI, automatyzacja procesów za pomocą skryptów Bash."
+        }
       },
       "cogitech": {
         "position": "Junior Backend Developer",
-        "from": "May 2022",
-        "to": "February 2023",
+        "from": "Maj 2022",
+        "to": "Luty 2023",
         "duties": {
-          "duty1": "Projektowanie i rozwój modułów systemu CRM zgodnie z wymaganiami klienta, w tym modułów HRM obejmujących rozliczenia pracowników, wysyłkę faktur i przypomnień płatności.",
-          "duty2": "Zarządzanie bazą danych MySQL, optymalizacja zapytań oraz utrzymanie integralności danych.",
-          "duty3": "Testowanie funkcjonalności systemu, naprawa błędów oraz generowanie plików PDF z danymi systemowymi.",
-          "duty4": "Udział w projekcie Employee Reporting System z wykorzystaniem Vue 3 + TypeScript, obejmując tworzenie nowych widoków oraz analizę danych przy użyciu SQL."
-        },
-        "techStack": ["Symfony", "API Platform", "Vue.js", "TypeScript", "MySQL"]
+          "duty1": "Projektowanie i rozwój modułów systemu CRM dla Biura wewnętrznego i Biura księgowego w tym modułów HRM obejmujących rozliczenia pracowników, wysyłkę faktur i przypomnień płatności.",
+          "duty2": "Zarządzanie bazą danych, optymalizacja zapytań oraz utrzymanie integralności danych.",
+          "duty3": "Testowanie funkcjonalności systemu, naprawa błędów oraz generowanie raportów.",
+          "duty4": "Udział w projekcie Employee Reporting System z wykorzystaniem Vue 3 + TypeScript, obejmujący tworzenie nowych widoków oraz pisanie zapytań analitycznych przy użyciu SQL."
+        }
       }
     },
     "projects": {

@@ -1,13 +1,19 @@
+import { col } from "framer-motion/client";
+
 export const experienceData = {
   backend: [
     {
       name: "x-one",
       employerName: "X-one",
       link: "https://x-one.pl/",
-      duties: 1,
+      duties: 5,
       techStack: {
-        column01: ["PHP", "Symfony", "Docker", "Redis"],
-        column02: ["Stimulus", "Turbo", "Bitbucket", "Git"],
+        column01: ["PHP", "Symfony 6", "PostgreSQL", "PHPUnit"],
+        column02: ["Stimulus", "Turbo", "Node.js", "Express"],
+        column03: ["Docker", "Redis"],
+        // Projekt i implementacja modułu reguł promocyjnych umożliwiającego definiowanie złożonych warunków promowania
+        // Proces synchronizacji ofert produktów z serwisów zewnętrznych
+        // Moduł uprawnień użytkowników
       },
     },
     {
@@ -16,8 +22,9 @@ export const experienceData = {
       link: "https://contelizer.pl",
       duties: 6,
       techStack: {
-        column01: ["PHP", "Symfony", "Bootstrap", "Docker", "Redis"],
-        column02: ["Sql", "JavaScript", "Bash", "Gitlab", "CI/CD"],
+        column01: ["PHP", "Symfony", "API Platform", "PHPUnit"],
+        column02: ["SQL", "JavaScript", "GitLab"],
+        column03: ["Docker", "Redis", "CI/CD", "Bash"]
       },
     },
     {
@@ -26,8 +33,9 @@ export const experienceData = {
       link: "https://cogitech.pl",
       duties: 4,
       techStack: {
-        column01: ["PHP", "Symfony", "Docker", "Sql"],
-        column02: ["JavaScript", "Vue", "Github"],
+        column01: ["PHP", "Symfony", "Twig"],
+        column02: ["JavaScript", "Vue (TypeScript)"],
+        column03: ["Docker", "GitHub", "MySQL"],
       },
     },
   ],
