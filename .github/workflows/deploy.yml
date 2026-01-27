@@ -1,0 +1,44 @@
+name: CI/CD Portfolio Deployment
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  deploy:
+    environment: portfolio_deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Deploy to Server via SSH
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_KEY }}
+          port: ${{ secrets.SSH_PORT }}
+          script: |
+            cd /var/www/Portfolio
+            git pull origin master
+      
+            # docker build -t portfolio \
+            #  --build-arg NEXT_PUBLIC_FIRSTNAME="${{ vars.NEXT_PUBLIC_FIRSTNAME }}" \
+            #  --build-arg NEXT_PUBLIC_SURNAME="${{ vars.NEXT_PUBLIC_SURNAME }}" \
+            #  .
+            
+            docker build -t portfolio .
+            
+            docker stop portfolio || true
+            docker rm portfolio || true
+            
+            # Uruchom nowy kontener
+            docker run -d \
+              --name portfolio \
+              --restart always \
+              -p 3000:3000 \
+              portfolio
+            
+            # wyczyść stare, nieużywane obrazy ("dangling images")
+            # docker image prune -f
