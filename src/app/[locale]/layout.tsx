@@ -5,6 +5,7 @@ import { AppContextProvider } from "@/context/AppContext";
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
+import { Suspense } from "react";
 
 const inter = Inter({
   subsets: ["latin-ext"],
@@ -46,12 +47,14 @@ export default async function RootLayout({ children, params }: Props) {
   return (
     <html lang={locale} className={`${inter.variable}`} suppressHydrationWarning>
       <body className={`${inter.className} dark antialiased`}>
-        <NextIntlClientProvider locale={locale} messages={messages}>
-          <AppContextProvider>
-            {children}
-          </AppContextProvider>
+        <NextIntlClientProvider messages={messages}>
+          <Suspense fallback={<div className="bg-primary h-screen w-screen" />}>
+            <AppContextProvider>
+              {children}
+            </AppContextProvider>
+          </Suspense>
         </NextIntlClientProvider>
       </body>
-    </html>
+    </html>   
   );
 }
