@@ -5,29 +5,52 @@ import { useActiveSection } from "@/hooks/useActiveSection";
 import { NavLink } from "@/types";
 import { AiOutlineHome } from "react-icons/ai";
 import { RxPerson } from "react-icons/rx";
-import { IoBriefcaseOutline, IoSchoolOutline, IoCodeSlashOutline } from "react-icons/io5";
-
-const links: NavLink[] = [
-  { id: 0, label: "home", icon: AiOutlineHome },
-  { id: 1, label: "about", icon: RxPerson },
-  { id: 2, label: "education", icon: IoSchoolOutline },
-  { id: 3, label: "experience", icon: IoBriefcaseOutline },
-  { id: 4, label: "projects", icon: IoCodeSlashOutline },
-];
+import { 
+  IoBriefcaseOutline, 
+  IoSchoolOutline, 
+  IoCodeSlashOutline, 
+  IoGridOutline 
+} from "react-icons/io5";
 
 export const VerticalNavbar = () => {
   const context = useContext(AppContext);
   if (!context) return null;
 
-  const { activeSection, setActiveSection } = context;
+  const { activeSection, setActiveSection, activeProfile } = context;
 
-  const sectionIds = useMemo(() => links.map((l) => l.label), []);
+  const links = useMemo((): NavLink[] => {
+    const baseLinks: NavLink[] = [
+      { id: 0, label: "home", icon: AiOutlineHome },
+      { id: 1, label: "about", icon: RxPerson },
+      { id: 2, label: "education", icon: IoSchoolOutline },
+      { id: 3, label: "experience", icon: IoBriefcaseOutline },
+    ];
+
+    if (activeProfile === "backend") {
+      return [
+        ...baseLinks,
+        { id: 4, label: "projects", icon: IoCodeSlashOutline },
+      ];
+    }
+
+    if (activeProfile === "data_analyst") {
+      return [
+        ...baseLinks,
+        { id: 4, label: "small_projects", icon: IoGridOutline }, // Ikona dla małych projektów
+      ];
+    }
+
+    return baseLinks;
+  }, [activeProfile]);
+
+  // Extract only the section IDs for the scroll observer hook
+  const sectionIds = useMemo(() => links.map((l) => l.label), [links]);
 
   // Run a hook that will "push" changes to the Context
   useActiveSection(sectionIds, setActiveSection); 
 
   const handleScroll = (id: string) => {
-    setActiveSection(id); // Update active section in context
+    setActiveSection(id);
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
   };
 
@@ -42,7 +65,7 @@ export const VerticalNavbar = () => {
           const isActive = activeSection === link.label;
 
           return (
-            <li key={link.id} className="group relative">
+            <li key={`${activeProfile}-${link.id}`} className="group relative">
               <button
                 onClick={() => handleScroll(link.label)}
                 className={`

@@ -233,6 +233,12 @@
         }
       }
     },
+    "small_projects": {
+      "headers": {
+        "small_projects": "Moje Projekty"
+      }
+
+    },
     "contact": {
       "location": "Lokalizacja",
       "relocation": "Polska",

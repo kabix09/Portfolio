@@ -1,46 +1,7 @@
 import { Profile } from "@/context/AppContext";
 
-export const projectsData = {
-  backend: [
-    {
-      id: "pyrkon",
-      title: "pyrkon.title",
-      category: "Web App",
-      description: "pyrkon.description",
-      images: ["/assets/projects/pyrkon/1.jpg", "/assets/projects/pyrkon/2.jpg"],
-      technologies: [
-        "pyrkon.tech.php", 
-        "pyrkon.tech.laravel", 
-        "pyrkon.tech.postgres"
-      ],
-      // ... linki
-    },
-    {
-      id: "wosp",
-      title: "wosp.title",
-      category: "Web App",
-      description: "wosp.description",
-      images: ["/assets/projects/wosp/1.jpg"],
-      technologies: [
-        "wosp.tech.php", 
-        "wosp.tech.laravel", 
-        "wosp.tech.api"
-      ],
-      // ... linki
-    },
-      {
-      id: "skn",
-      title: "skn.title",
-      category: "Web App",
-      description: "skn.description",
-      images: ["/assets/projects/skn/1.jpg", "/assets/projects/skn/2.jpg"],
-      technologies: [
-        "skn.tech.csharp", 
-        "skn.tech.vue", 
-        "skn.tech.tailwind"
-      ],
-    }
-  ],
+export const smallProjectsData = {
+  backend: [],
   data_analyst: [
     {
       id: "coffee_dashboard",
@@ -137,9 +98,59 @@ export const projectsData = {
   ],
 };
 
+export const projectsData = {
+  backend: [
+    {
+      id: "pyrkon",
+      title: "pyrkon.title",
+      category: "Web App",
+      description: "pyrkon.description",
+      images: ["/assets/projects/pyrkon/1.jpg", "/assets/projects/pyrkon/2.jpg"],
+      technologies: [
+        "pyrkon.tech.php", 
+        "pyrkon.tech.laravel", 
+        "pyrkon.tech.postgres"
+      ],
+      // ... linki
+    },
+    {
+      id: "wosp",
+      title: "wosp.title",
+      category: "Web App",
+      description: "wosp.description",
+      images: ["/assets/projects/wosp/1.jpg"],
+      technologies: [
+        "wosp.tech.php", 
+        "wosp.tech.laravel", 
+        "wosp.tech.api"
+      ],
+      // ... linki
+    },
+      {
+      id: "skn",
+      title: "skn.title",
+      category: "Web App",
+      description: "skn.description",
+      images: ["/assets/projects/skn/1.jpg", "/assets/projects/skn/2.jpg"],
+      technologies: [
+        "skn.tech.csharp", 
+        "skn.tech.vue", 
+        "skn.tech.tailwind"
+      ],
+    }
+  ],
+  data_analyst: []
+};
+
 // Unikalne kategorie do filtra
 export const getProjectCategories = (profile: Profile) => {
   const profileProjects = projectsData[profile] || [];
+  const categories = profileProjects.map((p) => p.category);
+  return ["All", ...Array.from(new Set(categories))];
+};
+
+export const getSmallProjectCategories = (profile: Profile) => {
+  const profileProjects = smallProjectsData[profile] || [];
   const categories = profileProjects.map((p) => p.category);
   return ["All", ...Array.from(new Set(categories))];
 };

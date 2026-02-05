@@ -233,6 +233,12 @@
         }
       }
     },
+    "small_projects": {
+      "headers": {
+        "small_projects": "My Projects"
+      }
+
+    },
     "contact": {
       "location": "Location",
       "relocation": "Poland",

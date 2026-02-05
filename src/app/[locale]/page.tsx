@@ -12,6 +12,7 @@ import { About } from "@/container/About/About";
 import { Contact } from "@/container/Contact/Contact";
 import { Education } from "@/container/Education/Education";
 import { Projects } from "@/container/Projects/Projects";
+import { SmallProjects } from "@/container/Projects/SmallProjects";
 import Organizations from "@/components/Organizations/Organizations";
 
 export default function Home() {
@@ -21,6 +22,7 @@ export default function Home() {
   if (!context) return null;
 
   const { showAsideContact } = context;
+  const activeProfile = context.activeProfile || "backend";
 
   return (
     <main className="relative min-h-screen w-full overflow-x-hidden">
@@ -63,9 +65,23 @@ export default function Home() {
           <Experience />
         </section>
 
-        <section id="projects" className="min-h-screen flex items-center justify-center py-[2rem]">
-          <Projects />
-        </section>
+        {activeProfile === 'backend' && (
+          <section
+            id="projects"
+            className="min-h-screen flex items-center justify-center py-[2rem]"
+          >
+            <Projects />
+          </section>
+        )}
+
+        {activeProfile === 'data_analyst' && (
+          <section
+            id="small_projects"
+            className="min-h-screen flex items-center justify-center py-[2rem]"
+          >
+            <SmallProjects />
+          </section>
+        )}
 
         <Organizations />
       </div>
