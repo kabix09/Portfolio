@@ -154,3 +154,13 @@ export const getSmallProjectCategories = (profile: Profile) => {
   const categories = profileProjects.map((p) => p.category);
   return ["All", ...Array.from(new Set(categories))];
 };
+
+export const getProfileConfiguration = (profile: string) => {
+  const data = projectsData[profile as keyof typeof projectsData] || [];
+  const smallProjects = smallProjectsData[profile as keyof typeof smallProjectsData] || [];
+
+  return {
+    showProjects: data.length > 0,
+    showSmallProjects: smallProjects.length > 0
+  };
+};

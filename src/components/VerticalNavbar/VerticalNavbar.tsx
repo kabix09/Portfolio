@@ -11,6 +11,7 @@ import {
   IoCodeSlashOutline, 
   IoGridOutline 
 } from "react-icons/io5";
+import { getProfileConfiguration } from "@/constants/projects";
 
 export const VerticalNavbar = () => {
   const context = useContext(AppContext);
@@ -18,30 +19,26 @@ export const VerticalNavbar = () => {
 
   const { activeSection, setActiveSection, activeProfile } = context;
 
-  const links = useMemo((): NavLink[] => {
-    const baseLinks: NavLink[] = [
-      { id: 0, label: "home", icon: AiOutlineHome },
-      { id: 1, label: "about", icon: RxPerson },
-      { id: 2, label: "education", icon: IoSchoolOutline },
-      { id: 3, label: "experience", icon: IoBriefcaseOutline },
-    ];
+const links = useMemo((): NavLink[] => {
+  const config = getProfileConfiguration(activeProfile);
+  
+  const baseLinks: NavLink[] = [
+    { id: 0, label: "home", icon: AiOutlineHome },
+    { id: 1, label: "about", icon: RxPerson },
+    { id: 2, label: "education", icon: IoSchoolOutline },
+    { id: 3, label: "experience", icon: IoBriefcaseOutline },
+  ];
 
-    if (activeProfile === "backend") {
-      return [
-        ...baseLinks,
-        { id: 4, label: "projects", icon: IoCodeSlashOutline },
-      ];
-    }
+  if (config.showProjects) {
+    baseLinks.push({ id: 4, label: "projects", icon: IoCodeSlashOutline });
+  }
 
-    if (activeProfile === "data_analyst") {
-      return [
-        ...baseLinks,
-        { id: 4, label: "small_projects", icon: IoGridOutline }, // Ikona dla małych projektów
-      ];
-    }
+  if (config.showSmallProjects) {
+    baseLinks.push({ id: 5, label: "small_projects", icon: IoGridOutline });
+  }
 
-    return baseLinks;
-  }, [activeProfile]);
+  return baseLinks;
+}, [activeProfile]);
 
   // Extract only the section IDs for the scroll observer hook
   const sectionIds = useMemo(() => links.map((l) => l.label), [links]);

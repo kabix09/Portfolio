@@ -14,6 +14,7 @@ import { Education } from "@/container/Education/Education";
 import { Projects } from "@/container/Projects/Projects";
 import { SmallProjects } from "@/container/Projects/SmallProjects";
 import Organizations from "@/components/Organizations/Organizations";
+import { getProfileConfiguration } from "@/constants/projects";
 
 export default function Home() {
   const context = useContext(AppContext);
@@ -23,6 +24,7 @@ export default function Home() {
 
   const { showAsideContact } = context;
   const activeProfile = context.activeProfile || "backend";
+  const config = getProfileConfiguration(activeProfile);
 
   return (
     <main className="relative min-h-screen w-full overflow-x-hidden">
@@ -65,7 +67,7 @@ export default function Home() {
           <Experience />
         </section>
 
-        {activeProfile === 'backend' && (
+        {config.showProjects && (
           <section
             id="projects"
             className="min-h-screen flex items-center justify-center py-[2rem]"
@@ -74,7 +76,7 @@ export default function Home() {
           </section>
         )}
 
-        {activeProfile === 'data_analyst' && (
+        {config.showSmallProjects && (
           <section
             id="small_projects"
             className="min-h-screen flex items-center justify-center py-[2rem]"
