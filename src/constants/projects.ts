@@ -43,6 +43,24 @@ export const projectsData = {
   ],
   data_analyst: [
     {
+      id: "coffee_dashboard",
+      title: "coffee_dashboard.title",
+      category: "Power BI",
+      description: "coffee_dashboard.description",
+      images: [
+        "/assets/projects/coffee_dashboard/dashboard.png",
+        "/assets/projects/coffee_dashboard/coffee_quality.png",
+        "/assets/projects/coffee_dashboard/map.png",
+        "/assets/projects/coffee_dashboard/price.png"
+      ],
+      technologies: [
+        "coffee_dashboard.tech.powerbi",
+        "coffee_dashboard.tech.dax",
+        "coffee_dashboard.tech.dataVisualization"
+      ],
+      githubLink: "https://github.com/kabix09/power-bi-portfolio/tree/master/coffee_dashboard"
+    },
+    {
       id: "hotel_recommender_classic",
       title: "hotel_recommender_classic.title",
       category: "Recommender System",

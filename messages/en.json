@@ -222,6 +222,15 @@
           "sqlserver": "SQL Server",
           "mdx": "MDX"
         }
+      },
+      "coffee_dashboard": {
+        "title": "Coffee Trade Analysis Dashboard",
+        "description": "An interactive Power BI dashboard analyzing coffee import & export trends based on ICO data. The project includes visualizations, DAX measures, and data segmentation, allowing exploration of import and export changes by geographic division and consumer behavior.",
+        "tech": {
+          "powerbi": "Power BI",
+          "dax": "DAX",
+          "dataVisualization": "Data Visualization"
+        }
       }
     },
     "contact": {

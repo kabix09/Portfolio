@@ -222,6 +222,15 @@
           "sqlserver": "SQL Server",
           "mdx": "MDX"
         }
+      },
+      "coffee_dashboard": {
+        "title": "Dashboard Analizy Kawy",
+        "description": "Interaktywny dashboard w Power BI analizujący trendy importu & eksportu kawy na podstawie danych z ICO. Projekt obejmuje wizualizacje, miary DAX oraz segmentację danych. Pozwala na eksplorację zmian importu i eksportu według podziału geograficznego i zachowań konsumenckich.",
+        "tech": {
+          "powerbi": "Power BI",
+          "dax": "DAX",
+          "dataVisualization": "Wizualizacja Danych"
+        }
       }
     },
     "contact": {
