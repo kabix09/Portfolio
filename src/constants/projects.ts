@@ -126,7 +126,7 @@ export const projectsData = {
       ],
       // ... linki
     },
-      {
+    {
       id: "skn",
       title: "skn.title",
       category: "Web App",
@@ -139,7 +139,25 @@ export const projectsData = {
       ],
     }
   ],
-  data_analyst: []
+  data_analyst: [
+    {
+      id: "symulator_rankingu_publikacji",
+      title: "symulator_rankingu_publikacji.title",
+      category: "Data Analysis",
+      description: "symulator_rankingu_publikacji.description",
+      images: [
+      ],
+      technologies: [
+        "symulator_rankingu_publikacji.tech.python", 
+        "symulator_rankingu_publikacji.tech.pandas", 
+        "symulator_rankingu_publikacji.tech.numpy",
+        "symulator_rankingu_publikacji.tech.nlp",
+        "symulator_rankingu_publikacji.tech.vectorDb",
+        "symulator_rankingu_publikacji.tech.statystyka"
+      ],
+      githubLink: "https://github.com/kabix09/scientometric_search_engines"
+    }
+  ]
 };
 
 // Unikalne kategorie do filtra

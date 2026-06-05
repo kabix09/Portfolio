@@ -133,6 +133,17 @@
           "duty3": "Testowanie funkcjonalności systemu, naprawa błędów oraz generowanie raportów.",
           "duty4": "Udział w projekcie Employee Reporting System z wykorzystaniem Vue 3 + TypeScript, obejmujący tworzenie nowych widoków oraz pisanie zapytań analitycznych przy użyciu SQL."
         }
+      },
+      "europegaz": {
+        "position": "Projekt w kooperacji między Uniwersytetem Ekonomicznym w Poznaniu a",
+        "from": "Wrz 2025",
+        "to": "Gru 2025",
+        "duties": {
+          "duty1": "Stworzenie modelu minimalizującego dystans przewozów bez ładunku przy użyciu programowania liniowego (Linear Programming).",
+          "duty2": "Zbudowanie bazy miast i odległości po przez integrację z zewnętrznym API.",
+          "duty3": "Przeprowadzenie procesu ETL. Oczyszczanie i transformacja danych przewozowych przy użyciu biblioteki Pandas & Numpy.",
+          "duty4": "Integracja i testowanie wydajności solverów matematycznych (CBC, GLPK, CPLEX)."
+        }
       }
     },
     "projects": {
@@ -230,6 +241,17 @@
           "powerbi": "Power BI",
           "dax": "DAX",
           "dataVisualization": "Wizualizacja Danych"
+        }
+      },
+      "symulator_rankingu_publikacji": {
+        "title": "Master thesis - Symulator Rankingu Publikacji Naukowych",
+          "description": "Projekt realizowany w ramach pracy magisterskiej na Politechnice Poznańskiej, obejmujący eksperymentalny system symulujący działanie wyszukiwarki naukowej w celu analizy wpływu algorytmów rankingowych na widoczność publikacji.\n\nW ramach projektu zrealizowano:\n• Zastosowanie transformacji logarytmicznej danych, redukując wpływ skrajnych wartości i umożliwiając poprawną analizę rozkładów cytowań.\n• Wdrożenie wyszukiwania semantycznego (baza wektorowa & embeddingi NLP) do oceny podobieństwa zapytań i dokumentów.\n• Optymalizację wydajności eksperymentu.\n• Analizę statystyczną (power law, testy Kołmogorowa–Smirnowa) oraz porównanie wyników symulacji z danymi rzeczywistymi (DBLP).",        "tech": {
+          "python": "Python",
+          "pandas": "Pandas",
+          "numpy": "NumPy",
+          "nlp": "NLP (Embeddings)",
+          "vectorDb": "Baza Wektorowa",
+          "statystyka": "Analiza Statystyczna"
         }
       }
     },

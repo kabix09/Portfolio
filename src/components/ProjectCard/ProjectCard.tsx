@@ -50,7 +50,7 @@ export const ProjectCard = ({
       transition={{ duration: 0.5, delay: index * 0.1 }}
       // KLUCZOWA ZMIANA: col-span-2 dla projektów ze zdjęciami, col-span-1 dla reszty
       className={`group relative w-full flex flex-col ${
-        hasImages ? "lg:flex-row lg:col-span-2" : "col-span-1"
+        (hasImages || title === "symulator_rankingu_publikacji.title") ? "lg:flex-row lg:col-span-2" : "col-span-1"
       } gap-[2.5rem] p-[2.5rem] bg-primary-lighter border border-white/5 rounded-[2.5rem] hover:border-accent/30 transition-all duration-300`}
     >
       {hasImages && (

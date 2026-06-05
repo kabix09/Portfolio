@@ -39,5 +39,16 @@ export const experienceData = {
       },
     },
   ],
-  data_analyst: [],
+  data_analyst: [
+    {
+      name: "europegaz",
+      employerName: "Europegaz",
+      link: "https://github.com/kabix09",
+      duties: 4,
+      techStack: {
+        column01: ["Python", "Linear Programming", "Pandas"],
+        column02: ["NumPy", "External API", "ETL"]
+      },
+    },
+  ],
 } 

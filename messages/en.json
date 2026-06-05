@@ -133,6 +133,17 @@
           "duty3": "Functionality testing, bug fixing, and reports generating.",
           "duty4": "Participation in the Employee Reporting System project using Vue 3 + TypeScript, including creating new views and writing analytical queries using SQL."
         }
+      },
+      "europegaz": {
+        "position": "Collaborative project between Poznan University of Economics and Business and",
+        "from": "Sep 2025",
+        "to": "Dec 2025",
+        "duties": {
+          "duty1": "Developing a model to minimize empty haulage distance using linear programming.",
+          "duty2": "Building a database of cities and distances through integration with an external API.",
+          "duty3": "Executing the ETL process, including cleansing and transforming transport data using Pandas and NumPy libraries.",
+          "duty4": "Integrating and performance testing mathematical solvers (CBC, GLPK, CPLEX)."
+        }
       }
     },
     "projects": {
@@ -230,6 +241,18 @@
           "powerbi": "Power BI",
           "dax": "DAX",
           "dataVisualization": "Data Visualization"
+        }
+      },
+      "symulator_rankingu_publikacji": {
+        "title": "Master's Thesis - Scientific Publication Ranking Simulator",
+        "description": "A project developed as part of a Master's thesis at Poznan University of Technology, featuring an experimental system that simulates a scientific search engine to analyze the impact of ranking algorithms on publication visibility.\n\nThe project involved:\n• Applying logarithmic data transformation to reduce the impact of extreme values, enabling accurate analysis of citation distributions.\n• Implementing semantic search (vector database & NLP embeddings) to evaluate the similarity between queries and documents.\n• Optimizing experiment performance.\n• Conducting statistical analysis (power law, Kolmogorov–Smirnov tests) and comparing simulation results with real-world data (DBLP).",
+        "tech": {
+          "python": "Python",
+          "pandas": "Pandas",
+          "numpy": "NumPy",
+          "nlp": "NLP (Embeddings)",
+          "vectorDb": "Vector Database",
+          "statystyka": "Statistical Analysis"
         }
       }
     },
