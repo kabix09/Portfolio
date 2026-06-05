@@ -14,10 +14,10 @@ export const organizations = [
     description: "Technologie dla sektora publicznego"
   },
   {
-    name: "Kanał Studencki",
-    logo: "https://kanalstudencki.pl/wp-content/uploads/2024/09/Kanal-studencki-logo-kolor-e1726870408355.png",
-    link: "https://kanalstudencki.pl/",
-    years: " — ",
-    description: "Analiza danych i tworzenie wizualizacji"
+    name: "Project Management Institute",
+    logo: "https://images.seeklogo.com/logo-png/43/1/pmi-logo-png_seeklogo-439670.png",
+    link: "https://pmi.org.pl/",
+    years: "05.2026 — now",
+    description: "Organizacja zrzeszająca specjalistów z zakresu zarządzania projektami"
   }
 ];
