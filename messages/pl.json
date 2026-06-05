@@ -98,10 +98,19 @@
         "usedTech": "Technologie, z których korzystałem:"
       },
       "noExperienceYet": "Jeszcze nie mam doświadczenia zawodowego w tej roli.",
+      "ideo": {
+        "position": "Mid Backend Developer",
+        "from": "Marzec 2026",
+        "to": "obecnie",
+        "duties": {
+          "duty1": "Pisanie wtyczki do Shopify",
+          "duty2": "Integracja z zewnętrznymi API (Shopify, DHL)"
+        }
+      },
       "x-one": {
         "position": "Mid Backend Developer",
         "from": "Czerwiec 2025",
-        "to": "Teraz",
+        "to": "Styczeń 2026",
         "duties": {
           "duty1": "Projektowanie i implementacja modułów do narzędzi typu panelu administracyjnego asystenta AI",
           "duty2": "Integracja z serwisami headless",

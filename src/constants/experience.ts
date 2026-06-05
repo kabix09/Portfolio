@@ -3,6 +3,17 @@ import { col } from "framer-motion/client";
 export const experienceData = {
   backend: [
     {
+      name: "ideo",
+      employerName: "Ideo Software",
+      link: "https://www.ideo.pl/",
+      duties: 2,
+      techStack: {
+        column01: ["PHP", "Laravel", "PostgreSQL"],
+        column02: ["Vue", "Shopify"],
+        column03: ["GraphQL", "SOAP"],
+      },
+    },
+    {
       name: "x-one",
       employerName: "X-one",
       link: "https://x-one.pl/",

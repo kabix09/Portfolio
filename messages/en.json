@@ -98,10 +98,19 @@
         "usedTech": "Few technologies I’ve been working with:"
       },
       "noExperienceYet": "I don't have professional experience in this role yet.",
+      "ideo": {
+        "position": "Mid Backend Developer",
+        "from": "March 2026",
+        "to": "Present",
+        "duties": {
+          "duty1": "Developing Shopify plugins",
+          "duty2": "Integrating with external APIs (Shopify, DHL)"
+        }
+      },
       "x-one": {
         "position": "Mid Backend Developer",
         "from": "June 2025",
-        "to": "Now",
+        "to": "January 2026",
         "duties": {
           "duty1": "Designing and implementing modules for AI assistant administrative panels.",  
           "duty2": "Integrating applications with headless services.",
