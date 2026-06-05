@@ -259,7 +259,11 @@
       "headers": {
         "small_projects": "Moje Projekty"
       }
-
+    },
+    "organizations": {
+      "headers": {
+        "organizations": "Organizacje i Społeczności"
+      }
     },
     "contact": {
       "location": "Lokalizacja",

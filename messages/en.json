@@ -260,7 +260,11 @@
       "headers": {
         "small_projects": "My Projects"
       }
-
+    },
+    "organizations": {
+      "headers": {
+        "organizations": "Organizations & Member Associations"
+      }
     },
     "contact": {
       "location": "Location",
