@@ -159,6 +159,23 @@
       "headers": {
         "projects": "Projekty w których uczestniczyłem"
       },
+      "pmi": {
+        "title": "Article Management System – PMI",
+        "description": "Platforma do zarządzania treścią, wspierająca autorów w tworzeniu artykułów oraz zarządzaniu ich przepływem w procesie publikacji. System usprawnia wersjonowanie, proces recenzji i akceptacji artykułów oraz monitorowanie postępu publikacji.",
+        "Responsibilities": [
+          "Gathering and analyzing business requirements.",
+          "Designing the article versioning system to support content revisions and change tracking.",
+          "Designing and defining the article workflow process, including review, approval, and publication stages.",
+          "Collaborating with stakeholders to align the platform with editorial and publishing requirements."
+        ],
+        "tech": {
+          "laravel": "Laravel",
+          "php": "PHP",
+          "api": "REST API",
+          "postgres": "PostgreSQL",
+          "docker": "Docker"
+        }
+      },
       "pyrkon": {
         "title": "System Rejestracji RPG – Pyrkon",
         "description": "Kompleksowy system zapisów na sesje RPG dla największego konwentu fantastyki w Polsce. Umożliwia zarządzanie tysiącami uczestników, sesjami Mistrzów Gry oraz logistyką wydarzenia.",

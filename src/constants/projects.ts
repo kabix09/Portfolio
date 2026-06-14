@@ -101,6 +101,19 @@ export const smallProjectsData = {
 export const projectsData = {
   backend: [
     {
+      id: "pmi",
+      title: "pmi.title",
+      category: "Web App",
+      description: "pmi.description",
+      images: ["/assets/projects/pmi/image.png"],
+      technologies: [
+        "pmi.tech.php", 
+        "pmi.tech.laravel",
+        "pmi.tech.api",
+        "pmi.tech.postgres"
+      ]
+    },
+    {
       id: "pyrkon",
       title: "pyrkon.title",
       category: "Web App",

@@ -159,6 +159,23 @@
       "headers": {
         "projects": "Projects I've Participated In"
       },
+      "pmi": {
+        "title": "Article Management System – PMI",
+        "description": "A content management platform that supports authors in creating articles and managing their progression through the publication process. The system streamlines content versioning, article review and approval workflows, and publication progress tracking.",
+        "Responsibilities": [
+          "Gathering and analyzing business requirements.",
+          "Designing the article versioning system to support content revisions and change tracking.",
+          "Designing and defining the article workflow process, including review, approval, and publication stages.",
+          "Collaborating with stakeholders to align the platform with editorial and publishing requirements."
+        ],
+        "tech": {
+          "laravel": "Laravel",
+          "php": "PHP",
+          "api": "REST API",
+          "postgres": "PostgreSQL",
+          "docker": "Docker"
+        }
+      },
       "pyrkon": {
         "title": "RPG Registration System – Pyrkon",
         "description": "A robust registration system for RPG sessions at Poland's largest fantasy convention. Manages player sign-ups, Game Master sessions, and event logistics for thousands of attendees.",
