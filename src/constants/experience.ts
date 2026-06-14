@@ -12,6 +12,8 @@ export const experienceData = {
         column02: ["Vue", "Shopify"],
         column03: ["GraphQL", "SOAP"],
       },
+      from: "2026-03-01",
+      to: "Present",
     },
     {
       name: "x-one",
@@ -26,6 +28,8 @@ export const experienceData = {
         // Proces synchronizacji ofert produktów z serwisów zewnętrznych
         // Moduł uprawnień użytkowników
       },
+      from: "2025-06-01",
+      to: "2026-01-31",
     },
     {
       name: "contelizer",
@@ -37,6 +41,8 @@ export const experienceData = {
         column02: ["SQL", "JavaScript", "GitLab"],
         column03: ["Docker", "Redis", "CI/CD", "Bash"]
       },
+      from: "2023-09-01",
+      to: "2025-04-30",
     },
     {
       name: "cogitech",
@@ -48,6 +54,8 @@ export const experienceData = {
         column02: ["JavaScript", "Vue (TypeScript)"],
         column03: ["Docker", "GitHub", "MySQL"],
       },
+      from: "2022-05-01",
+      to: "2023-02-28",
     },
   ],
   data_analyst: [
@@ -60,6 +68,8 @@ export const experienceData = {
         column01: ["Python", "Linear Programming", "Pandas"],
         column02: ["NumPy", "External API", "ETL"]
       },
+      from: "2025-09-01",
+      to: "2025-12-31",
     },
   ],
 } 

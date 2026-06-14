@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useContext, useEffect } from "react";
+import React, { useState, useContext, useEffect, useMemo } from "react";
 import { motion, AnimatePresence, Variants } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { VscDebugBreakpointFunction } from "react-icons/vsc";
@@ -42,13 +42,73 @@ export const Experience = () => {
 
   const activeJob = hasExperience ? (jobs[activeIndex] ?? jobs[0]) : null;
 
+  // experience counter logic
+  const { years, months } = useMemo(() => {
+    const CV_NOW = new Date();
+
+    const parseDate = (value: string) => {
+      if (value === "Present") return CV_NOW;
+      return new Date(value);
+    };
+
+    const diffInMonths = (from: Date, to: Date) => {
+      const fromIndex = from.getFullYear() * 12 + from.getMonth();
+      const toIndex = to.getFullYear() * 12 + to.getMonth();
+
+      return Math.max(0, toIndex - fromIndex + 1);
+    };
+
+    const totalMonths = jobs.reduce((sum, job) => {
+      const from = parseDate(job.from);
+      const to = parseDate(job.to);
+
+      return sum + diffInMonths(from, to);
+    }, 0);
+
+    return {
+      years: Math.floor(totalMonths / 12),
+      months: totalMonths % 12,
+    };
+  }, [jobs]);
+
   return (
     <div className="w-full max-w-[90rem] flex flex-col items-start">
-      <div className="w-full text-left mb-[5rem]">
+      <div className="w-full text-left mb-[3rem]">
         <h2 className="text-[3.5rem] md:text-[3.5rem] font-bold">
           {t("headers.experience")}
         </h2>
+
         <div className="w-[6rem] h-[4px] bg-accent mt-2 rounded-full" />
+
+        <div className="mt-4 flex items-end justify-end gap-3 text-[1.5rem] text-neutral-400 mr-[100px]">
+          <span>Total</span>
+
+          <span className="flex items-end gap-1">
+            {years > 0 && (
+              <span className="text-[1.7rem] font-semibold">
+                <span className="text-accent">
+                {years}
+                </span>
+              </span>
+            )}
+
+            {months > 0 && (
+              <span className="text-[1.7rem] font-semibold text-accent inline-flex flex-col items-center leading-none">
+                <span className="text-sm">{months}</span>
+                <span className="w-full border-t border-neutral-500 my-[2px]" />
+                <span className="text-sm">12</span>
+              </span>
+            )}
+
+            {years === 0 && months === 0 && (
+              <span className="text-[1.7rem] font-semibold text-accent">
+                0
+              </span>
+            )}
+          </span>
+
+          <span>years of experience</span>
+        </div>
       </div>
 
       <div className="flex flex-col lg:flex-row w-full gap-[3rem] lg:gap-[5rem] min-h-[45rem]">
