@@ -14,7 +14,7 @@
         "role": "Backend Developer",
         "header": {
           "p1": "Hello there, my name is",
-          "p2": "I am a backend developer with over 3 years of commercial experience in building scalable and flexible systems. I specialize in designing modular solutions and integrating external processes and services, ensuring application stability and performance."
+          "p2": "I am a backend developer with 4 years of commercial experience in building scalable and flexible systems. I specialize in designing modular solutions and integrating external processes and services, ensuring application stability and performance."
         }
       },
       "data_analyst": {
@@ -101,10 +101,11 @@
       "ideo": {
         "position": "Mid Backend Developer",
         "from": "March 2026",
-        "to": "Present",
+        "to": "July 2026",
         "duties": {
-          "duty1": "Developing Shopify plugins",
-          "duty2": "Integrating with external APIs (Shopify, DHL)"
+          "duty1": "Working with the Shopify platform — building a custom extension/application.",
+          "duty2": "Integrating the e-commerce system with logistics providers (DHL).",
+          "duty3": "Working with an internal CMS/ERP system."
         }
       },
       "x-one": {

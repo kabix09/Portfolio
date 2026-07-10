@@ -6,14 +6,14 @@ export const experienceData = {
       name: "ideo",
       employerName: "Ideo Software",
       link: "https://www.ideo.pl/",
-      duties: 2,
+      duties: 3,
       techStack: {
         column01: ["PHP", "Laravel", "PostgreSQL"],
         column02: ["Vue", "Shopify"],
         column03: ["GraphQL", "SOAP"],
       },
       from: "2026-03-01",
-      to: "Present",
+      to: "2026-07-30",
     },
     {
       name: "x-one",

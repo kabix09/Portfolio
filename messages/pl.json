@@ -14,7 +14,7 @@
         "role": "Backend Developer",
         "header": {
           "p1": "Cześć, nazywam się",
-          "p2": "Jestem web developerem z ponad 3-letnim doświadczeniem w tworzeniu skalowalnych i elastycznych systemów. Specjalizuję się w projektowaniu modułowych rozwiązań oraz integracji procesów i usług zewnętrznych, zapewniając stabilność i wydajność aplikacji."
+          "p2": "Jestem web developerem z 4-letnim doświadczeniem w tworzeniu skalowalnych i elastycznych systemów. Specjalizuję się w projektowaniu modułowych rozwiązań oraz integracji procesów i usług zewnętrznych, zapewniając stabilność i wydajność aplikacji."
         }
       },
       "data_analyst": {
@@ -101,10 +101,11 @@
       "ideo": {
         "position": "Mid Backend Developer",
         "from": "Marzec 2026",
-        "to": "obecnie",
+        "to": "Lipiec 2026",
         "duties": {
-          "duty1": "Pisanie wtyczki do Shopify",
-          "duty2": "Integracja z zewnętrznymi API (Shopify, DHL)"
+          "duty1": "Praca z systemem Shopify - przygotowanie rozszerzenia",
+          "duty2": "Integracja systemu e-commerce z systemami logistycznymi (DHL).",
+          "duty3": "Praca z wewnętrznym systemem CMS/ERP."
         }
       },
       "x-one": {
