@@ -154,6 +154,14 @@
           "duty3": "Przeprowadzenie procesu ETL. Oczyszczanie i transformacja danych przewozowych przy użyciu biblioteki Pandas & Numpy.",
           "duty4": "Integracja i testowanie wydajności solverów matematycznych (CBC, GLPK, CPLEX)."
         }
+      },
+      "erste": {
+        "position": "Staż analityk danych - StażTECH",
+        "from": "Lip 2026",
+        "to": "Obecnie",
+        "duties": {
+          "duty1": "Staż matematyczno-statystyczny w pionie Startegii Danych. Dział Technologii Przetwarzania Danych."
+        }
       }
     },
     "projects": {

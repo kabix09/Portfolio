@@ -154,6 +154,14 @@
           "duty3": "Executing the ETL process, including cleansing and transforming transport data using Pandas and NumPy libraries.",
           "duty4": "Integrating and performance testing mathematical solvers (CBC, GLPK, CPLEX)."
         }
+      },
+      "erste": {
+        "position": "Data Analyst Intern - StażTECH",
+        "from": "Jul 2026",
+        "to": "Present",
+        "duties": {
+          "duty1": "Mathematical and statistical internship in the Data Strategy division, Data Processing Technology Department."
+        }
       }
     },
     "projects": {

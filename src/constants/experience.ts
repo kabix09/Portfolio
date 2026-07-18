@@ -60,6 +60,18 @@ export const experienceData = {
   ],
   data_analyst: [
     {
+      name: "erste",
+      employerName: "Erste Bank Polska",
+      link: "https://www.erste.pl/kariera",
+      duties: 1,
+      techStack: {
+        column01: ["Python", "Power BI", "ETL"],
+        column02: ["PostgreSQL", "Teradata"]
+      },
+      from: "2026-07-01",
+      to: "Present",
+    },
+    {
       name: "europegaz",
       employerName: "Europegaz",
       link: "https://github.com/kabix09",
@@ -70,6 +82,6 @@ export const experienceData = {
       },
       from: "2025-09-01",
       to: "2025-12-31",
-    },
+    }
   ],
 } 
