@@ -19,7 +19,8 @@ export const smallProjectsData = {
         "coffee_dashboard.tech.dax",
         "coffee_dashboard.tech.dataVisualization"
       ],
-      githubLink: "https://github.com/kabix09/power-bi-portfolio/tree/master/coffee_dashboard"
+      githubLink: "https://github.com/kabix09/power-bi-portfolio/tree/master/coffee_dashboard",
+      date: "2026" // 12-2025/02-2026 (3 mies)
     },
     {
       id: "hotel_recommender_classic",
@@ -33,7 +34,8 @@ export const smallProjectsData = {
         "hotel_recommender_classic.tech.numpy",
         "hotel_recommender_classic.tech.scikit"
       ],
-      githubLink: "https://github.com/kabix09/NeuralNetworkHotelRecommender"
+      githubLink: "https://github.com/kabix09/NeuralNetworkHotelRecommender",
+      date: "2022" // 03-2022/05-2022 (3 mies)
     },
     {
       id: "hotel_recommender_nn",
@@ -47,7 +49,8 @@ export const smallProjectsData = {
         "hotel_recommender_nn.tech.numpy",
         "hotel_recommender_nn.tech.tensorflow"
       ],
-      githubLink: "https://github.com/kabix09/HotelRecommender"
+      githubLink: "https://github.com/kabix09/HotelRecommender",
+      date: "2022" // 05-2022/06-2022 (2 mies)
     },
     {
       id: "story_beats",
@@ -62,7 +65,8 @@ export const smallProjectsData = {
         "story_beats.tech.pandas",
         "story_beats.tech.bs4"
       ],
-      githubLink: "https://github.com/kabix09/story-beats"
+      githubLink: "https://github.com/kabix09/story-beats",
+      date: "2024" // 04-2024/06-2024 (2 mies)
     },
     {
       id: "lego_analysis",
@@ -77,7 +81,8 @@ export const smallProjectsData = {
         "lego_analysis.tech.caret",
         "lego_analysis.tech.plotly"
       ],
-      githubLink: "https://github.com/kabix09/lego-data-analysis"
+      githubLink: "https://github.com/kabix09/lego-data-analysis",
+      date: "2023" // 11-2023/12-2023 (2 mies)
     },
     {
       id: "msbi_frania",
@@ -93,7 +98,8 @@ export const smallProjectsData = {
         "msbi_frania.tech.mdx",
         "msbi_frania.tech.sqlserver"
       ],
-      githubLink: "https://github.com/kabix09/MSBI-PowerBi"
+      githubLink: "https://github.com/kabix09/MSBI-PowerBi",
+      date: "2022" // 02-2022/03-2022 (2 mies)
     }
   ],
 };
