@@ -22,7 +22,7 @@ export const Projects = () => {
   const currentProfileProjects = projectsData[activeProfile as keyof typeof projectsData] || [];
 
   const filteredProjects = currentProfileProjects.filter((project) =>
-    activeCategory === "All" ? true : project.category === activeCategory
+    activeCategory === "All" ? true : project.category.includes(activeCategory)
   );
 
   return (

@@ -6,7 +6,7 @@ export const smallProjectsData = {
     {
       id: "coffee_dashboard",
       title: "coffee_dashboard.title",
-      category: "Power BI",
+      category: ["Power BI"],
       description: "coffee_dashboard.description",
       images: [
         "/assets/projects/coffee_dashboard/dashboard.png",
@@ -24,7 +24,7 @@ export const smallProjectsData = {
     {
       id: "hotel_recommender_classic",
       title: "hotel_recommender_classic.title",
-      category: "Recommender System",
+      category: ["Recommender System"],
       description: "hotel_recommender_classic.description",
       images: [], //["/assets/projects/hotel_recommender_classic/1.jpg", "/assets/projects/hotel_recommender_classic/2.jpg"],
       technologies: [
@@ -38,7 +38,7 @@ export const smallProjectsData = {
     {
       id: "hotel_recommender_nn",
       title: "hotel_recommender_nn.title",
-      category: "Recommender System",
+      category: ["Recommender System"],
       description: "hotel_recommender_nn.description",
       images: [], // ["/assets/projects/hotel_recommender_nn/1.jpg", "/assets/projects/hotel_recommender_nn/2.jpg"],
       technologies: [
@@ -52,7 +52,7 @@ export const smallProjectsData = {
     {
       id: "story_beats",
       title: "story_beats.title",
-      category: "NLP Analysis",
+      category: ["NLP Analysis"],
       description: "story_beats.description",
       images: [],
       technologies: [
@@ -67,7 +67,7 @@ export const smallProjectsData = {
     {
       id: "lego_analysis",
       title: "lego_analysis.title",
-      category: "Data Analysis",
+      category: ["Data Analysis"],
       description: "lego_analysis.description",
       images: [],
       technologies: [
@@ -82,7 +82,7 @@ export const smallProjectsData = {
     {
       id: "msbi_frania",
       title: "msbi_frania.title",
-      category: "MSBI",
+      category: ["MSBI"],
       description: "msbi_frania.description",
       images: ["/assets/projects/msbi_frania/1.png", "/assets/projects/msbi_frania/2.png"],
       technologies: [
@@ -103,20 +103,22 @@ export const projectsData = {
     {
       id: "pmi",
       title: "pmi.title",
-      category: "Web App",
+      category: ["Web App", "Laravel", "React"],
       description: "pmi.description",
       images: ["/assets/projects/pmi/image.png"],
       technologies: [
         "pmi.tech.php", 
         "pmi.tech.laravel",
         "pmi.tech.api",
-        "pmi.tech.postgres"
-      ]
+        "pmi.tech.postgres", 
+        "pmi.tech.react"
+      ],
+      date: "2026" // 05-2026/now
     },
     {
       id: "pyrkon",
       title: "pyrkon.title",
-      category: "Web App",
+      category: ["Web App", "Laravel"],
       description: "pyrkon.description",
       images: ["/assets/projects/pyrkon/1.jpg", "/assets/projects/pyrkon/2.jpg"],
       technologies: [
@@ -124,12 +126,13 @@ export const projectsData = {
         "pyrkon.tech.laravel", 
         "pyrkon.tech.postgres"
       ],
+      date: "2025" // 03-2025/06-2025 (3 mies)
       // ... linki
     },
     {
       id: "wosp",
       title: "wosp.title",
-      category: "Web App",
+      category: ["Web App", "Laravel"],
       description: "wosp.description",
       images: ["/assets/projects/wosp/1.jpg"],
       technologies: [
@@ -138,11 +141,12 @@ export const projectsData = {
         "wosp.tech.api"
       ],
       // ... linki
+      date: "2023/2025" // 03-2023/02-2024 (4 mies bo wakacje) & 09-2024/02-2025 (4 mies)
     },
     {
       id: "skn",
       title: "skn.title",
-      category: "Web App",
+      category: ["Web App", "C#", "Vue.js"],
       description: "skn.description",
       images: ["/assets/projects/skn/1.jpg", "/assets/projects/skn/2.jpg"],
       technologies: [
@@ -150,13 +154,14 @@ export const projectsData = {
         "skn.tech.vue", 
         "skn.tech.tailwind"
       ],
+      date: "2025" // 06-2025/09-2024 (4 mies)
     }
   ],
   data_analyst: [
     {
       id: "symulator_rankingu_publikacji",
       title: "symulator_rankingu_publikacji.title",
-      category: "Data Analysis",
+      category: ["Data Analysis"],
       description: "symulator_rankingu_publikacji.description",
       images: [
       ],
@@ -168,7 +173,8 @@ export const projectsData = {
         "symulator_rankingu_publikacji.tech.vectorDb",
         "symulator_rankingu_publikacji.tech.statystyka"
       ],
-      githubLink: "https://github.com/kabix09/scientometric_search_engines"
+      githubLink: "https://github.com/kabix09/scientometric_search_engines",
+      date: "2024" // 12-2023/09-2024 (9 mies)
     }
   ]
 };
@@ -176,13 +182,13 @@ export const projectsData = {
 // Unikalne kategorie do filtra
 export const getProjectCategories = (profile: Profile) => {
   const profileProjects = projectsData[profile] || [];
-  const categories = profileProjects.map((p) => p.category);
+  const categories = profileProjects.flatMap((p) => p.category);
   return ["All", ...Array.from(new Set(categories))];
 };
 
 export const getSmallProjectCategories = (profile: Profile) => {
   const profileProjects = smallProjectsData[profile] || [];
-  const categories = profileProjects.map((p) => p.category);
+  const categories = profileProjects.flatMap((p) => p.category);
   return ["All", ...Array.from(new Set(categories))];
 };
 
