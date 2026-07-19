@@ -13,17 +13,18 @@ import "swiper/css/pagination";
 
 interface Props {
   title: string;
-  category: string;
+  category: string[];
   description: string;
   images: string[];
   technologies: string[];
   projectLink?: string;
   githubLink?: string;
   index: number;
+  date: string;
 }
 
 export const ProjectCard = ({ 
-  title, category, description, images, technologies, projectLink, githubLink, index 
+  title, category, description, images, technologies, projectLink, githubLink, index, date
 }: Props) => {
   const t = useTranslations("sections.projects");
   const hasImages = images && images.length > 0;
@@ -82,10 +83,25 @@ export const ProjectCard = ({
       <div className="flex flex-col flex-1 justify-between">
         <div>
           <div className="flex justify-between items-start mb-[1.5rem]">
-            <div className="flex flex-col gap-[0.8rem]">
-              <span className="w-fit text-accent text-[1.1rem] font-medium bg-accent/10 px-[1rem] py-[0.2rem] rounded-full">
-                {category}
-              </span>
+            <div className="w-full flex flex-col gap-[0.8rem]">
+              {/* Category & Date */}
+              <div className="flex items-center justify-between">
+
+                {/* Category container */}
+                <div className="flex items-center gap-[0.5rem]">
+                  {category.map((cat, idx) => (
+                    <span key={`category-${idx}`} className="w-fit text-accent text-[1.1rem] font-medium bg-accent/10 px-[1rem] py-[0.2rem] rounded-full">
+                      {cat}
+                    </span>
+                  ))}
+                </div>
+                
+                <span className="text-accent text-[1.2rem] font-medium px-[1rem] py-[0.2rem]">
+                  {date}
+                </span>
+              </div>
+
+              {/* Tytuł */}
               <h3 className={`${hasImages ? "text-[2.4rem]" : "text-[2rem]"} font-bold leading-tight text-font-main`}>
                 {t(title)}
               </h3>

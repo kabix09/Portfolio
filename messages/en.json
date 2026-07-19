@@ -182,7 +182,8 @@
           "php": "PHP",
           "api": "REST API",
           "postgres": "PostgreSQL",
-          "docker": "Docker"
+          "docker": "Docker",
+          "react": "React"
         }
       },
       "pyrkon": {
