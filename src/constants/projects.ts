@@ -107,6 +107,25 @@ export const smallProjectsData = {
 export const projectsData = {
   backend: [
     {
+      id: "code_for_poznan",
+      title: "code_for_poznan.title",
+      category: ["Web App", "Vue.js"],
+      description: "code_for_poznan.description",
+      images: [
+        "/assets/projects/code_for_poznan/1.png",
+        "/assets/projects/code_for_poznan/2.png",
+        "/assets/projects/code_for_poznan/3.png",
+        "/assets/projects/code_for_poznan/4.png",
+        "/assets/projects/code_for_poznan/5.png"
+      ],
+      technologies: [
+        "code_for_poznan.tech.vue",
+        "code_for_poznan.tech.tailwind",
+      ],
+      githubLink: "https://github.com/kabix09/codeforpoznan.pl",
+      date: "2026" // 07-2026/09-2026
+    },
+    {
       id: "pmi",
       title: "pmi.title",
       category: ["Web App", "Laravel", "React"],

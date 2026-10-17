@@ -168,6 +168,14 @@
       "headers": {
         "projects": "Projects I've Participated In"
       },
+      "code_for_poznan": {
+        "title": "Brochure Website - Code for Poznań",
+        "description": "A website for an NGO initiative, developed as part of a rebranding process. The project involved a case study to define goals, values, KPIs, and the visual direction (color palette, content layout, and structure). The final site reflects the community's values and its mission.",
+        "tech": {
+          "vue": "Vue.js",
+          "tailwind": "Tailwind CSS"
+        }
+      },
       "pmi": {
         "title": "Article Management System – PMI",
         "description": "A content management platform that supports authors in creating articles and managing their progression through the publication process. The system streamlines content versioning, article review and approval workflows, and publication progress tracking.",

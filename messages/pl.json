@@ -160,13 +160,21 @@
         "from": "Lip 2026",
         "to": "Obecnie",
         "duties": {
-          "duty1": "Staż matematyczno-statystyczny w pionie Startegii Danych. Dział Technologii Przetwarzania Danych."
+          "duty1": "Staż matematyczno-statystyczny w Pionie Bankowości Biznesowej i Korporacyjnej - biuro Startegii Danych. Zespół Technologii Danych."
         }
       }
     },
     "projects": {
       "headers": {
         "projects": "Projekty w których uczestniczyłem"
+      },
+      "code_for_poznan": {
+        "title": "Brochure Website - Code for Poznań",
+        "description": "Strona dla inicjatywy NGO, zrealizowana w ramach rebrandingu marki. Realizacja obejmowała case study i zdefiniowanie celów, wartości, KPI oraz kierunku wizualnego (paleta kolorów, układ treści, struktura). Strona oddaje wartościami społeczności oraz jej misje.",
+        "tech": {
+          "vue": "Vue.js",
+          "tailwind": "Tailwind CSS"
+        }
       },
       "pmi": {
         "title": "Article Management System – PMI",
