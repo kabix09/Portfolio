@@ -206,9 +206,19 @@ export const projectsData = {
 
 // Unikalne kategorie do filtra
 export const getProjectCategories = (profile: Profile) => {
+  const PRIORITY = ["Laravel", "Vue"];
+
   const profileProjects = projectsData[profile] || [];
-  const categories = profileProjects.flatMap((p) => p.category);
-  return ["All", ...Array.from(new Set(categories))];
+  const categories = profileProjects
+    .flatMap((p) => p.category)
+    .filter((c) => c !== "Web App");
+
+  const uniqueCategories = Array.from(new Set(categories));
+
+  const prioritized = PRIORITY.filter((c) => uniqueCategories.includes(c));
+  const theRest = uniqueCategories.filter((c) => !PRIORITY.includes(c));
+
+  return ["All", ...prioritized, ...theRest];
 };
 
 export const getSmallProjectCategories = (profile: Profile) => {
