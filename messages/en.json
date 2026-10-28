@@ -98,6 +98,15 @@
         "usedTech": "Few technologies I’ve been working with:"
       },
       "noExperienceYet": "I don't have professional experience in this role yet.",
+      "pmi": {
+        "position": "Full Stack Developer",
+        "from": "June 2026",
+        "to": "Present",
+        "duties": {
+          "duty1": "Developing a content management platform that supports authors in creating articles and managing their progression through the publication process.",
+          "duty2": "Gathering business requirements, designing the article versioning system, and defining the content workflow process, including review, approval, and publication stages."
+        }
+      },
       "ideo": {
         "position": "Mid Backend Developer",
         "from": "March 2026",

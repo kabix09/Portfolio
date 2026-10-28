@@ -3,6 +3,19 @@ import { col } from "framer-motion/client";
 export const experienceData = {
   backend: [
     {
+      name: "pmi",
+      employerName: "PMI Poland Chapter",
+      link: "https://pmi.org.pl/",
+      duties: 2,
+      techStack: {
+        column01: ["PHP", "Laravel", "PostgreSQL"],
+        column02: ["React", "TypeScript"],
+        column03: ["Docker", "CI/CD"],
+      },
+      from: "2026-06-01",
+      to: "Present",
+    },
+    {
       name: "ideo",
       employerName: "Ideo Software",
       link: "https://www.ideo.pl/",
