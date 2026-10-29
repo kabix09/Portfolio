@@ -53,12 +53,20 @@ export const AppContextProvider = ({ children }: { children: ReactNode }) => {
   }, [theme, selectedColor]);
 
   useEffect(() => {
-    const handleResize = () => {
-      setShowAsideContact(window.innerWidth >= 1200);
+    // 'xl' breakpoint w Tailwind CSS to 1280px, więc ustawiamy media query na min-width: 1280px
+    const mediaQuery = window.matchMedia("(min-width: 1280px)");
+
+    const handleChange = (e) => {
+      setShowAsideContact(e.matches);
     };
-    window.addEventListener("resize", handleResize);
-    handleResize();
-    return () => window.removeEventListener("resize", handleResize);
+
+    // check beginning state
+    setShowAsideContact(mediaQuery.matches);
+
+    // add listener for changes
+    mediaQuery.addEventListener("change", handleChange);
+
+    return () => mediaQuery.removeEventListener("change", handleChange);
   }, []);
 
   return (
