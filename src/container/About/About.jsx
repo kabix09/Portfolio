@@ -21,7 +21,7 @@ export const About = () => {
   const t = useTranslations("sections.about");
 
   return (
-    <div className="w-full max-w-[85rem] flex flex-col gap-[3rem] md:gap-[4rem]">
+    <div className="w-full flex flex-col gap-[3rem] md:gap-[4rem]">
       <div className="w-full text-left mb-[2rem]">
         <h2 className="text-[3.5rem] md:text-[3.5rem] font-bold">
           {t("headers.about")}

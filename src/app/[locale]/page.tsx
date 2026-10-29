@@ -47,7 +47,7 @@ export default function Home() {
         px-[2rem] pb-[2rem] 
         min-[500px]:px-[3rem] min-[500px]:pb-[3rem] 
         md:px-[5rem] md:pb-[5rem] 
-        xl:ml-[52rem] xl:mr-[5rem] xl:max-w-[95rem] xl:p-0
+        xl:ml-[50rem] xl:mr-[5rem] xl:max-w-[100rem] xl:p-0
         2xl:ml-[60rem] 2xl:mr-[8rem]
         transition-all duration-300
       ">
@@ -55,7 +55,7 @@ export default function Home() {
           <Header />
         </section>
         
-        <section id="about" className="min-h-screen flex items-center justify-center py-[5rem]">
+        <section id="about" className="min-h-screen flex flex-col items-center justify-center py-[5rem]">
           <About />
         </section>
       
